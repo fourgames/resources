@@ -93,7 +93,7 @@ or a bug you want to fix), the following channels can be used:
   If not, you can open a new issue. Please mind the guidelines outlined above
   for bug reporting.
 - [Feature proposals](https://github.com/fourgames/resources/discussions):
-  To propose a new feature start a new discussion [here](https://github.com/fourgames/resources/discussions/new/choose?category=ideas). Don't
+  To propose a new feature start a new discussion [here](https://github.com/fourgames/resources/discussions/new?category=ideas). Don't
   hesitate to start by talking about your idea to make sure that it makes sense in resources's context.
 
 Thanks for your interest in contributing!
