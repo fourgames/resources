@@ -44,6 +44,7 @@ sections:
             name: Godot Engine
             url: https://store.steampowered.com/app/404790/Godot_Engine/
             tags: [2D, 3D, Open Source]
+            shot: { waitMs: 6000 } # let the Steam trailer poster load
           - id: four-games-template
             name: Four Games Template
             url: https://github.com/fourgames/template
@@ -80,11 +81,13 @@ sections:
             name: Blender
             url: https://store.steampowered.com/app/365670/Blender/
             tags: [3D, Open Source]
+            shot: { waitMs: 6000 } # let the Steam trailer poster load
           - id: aseprite
             name: Aseprite
             url: https://store.steampowered.com/app/431730/Aseprite/
             tags: [2D, Paid]
             note: Pixel art editor
+            shot: { waitMs: 6000 } # let the Steam trailer poster load
           - id: photopea
             name: Photopea
             url: https://www.photopea.com/
@@ -293,6 +296,7 @@ sections:
             name: OBS Studio
             url: https://store.steampowered.com/app/1905180/OBS_Studio/
             tags: [Video, Open Source]
+            shot: { waitMs: 6000 } # let the Steam trailer poster load
           - id: godot-movie-writer
             name: Godot Movie Maker Mode
             url: https://www.youtube.com/watch?v=sN2Eiya_koA

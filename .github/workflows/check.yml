@@ -1,0 +1,25 @@
+name: Check
+
+on:
+  push:
+    paths: ["resources.yml", "README*", "scripts/**", ".github/images/**", "package*.json"]
+  pull_request:
+    paths: ["resources.yml", "README*", "scripts/**", ".github/images/**", "package*.json"]
+
+permissions:
+  contents: read
+
+jobs:
+  readme:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+      - run: npm run check
