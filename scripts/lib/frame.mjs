@@ -42,10 +42,14 @@ const shadow = () =>
     <rect x="${PAD_X}" y="${PAD_TOP + 5}" width="${WIN_W}" height="${WIN_H}" rx="${RADIUS}"
       fill="#000" fill-opacity=".45" filter="url(#s)"/>`);
 
-/** Wrap a raw page screenshot (any size, ~16:10) in a dark macOS-style browser window. Returns WebP. */
-export async function frame(raw) {
+/**
+ * Wrap a raw page screenshot (any size, ~16:10) in a dark macOS-style browser window. Returns WebP.
+ * fit 'cover' (default) crops to fill; 'contain' letterboxes, e.g. for 16:9 video thumbnails.
+ */
+export async function frame(raw, { fit = 'cover' } = {}) {
   const content = await sharp(raw)
-    .resize(WIN_W, CONTENT_H, { fit: 'cover', position: 'top', kernel: 'lanczos3' })
+    .resize(WIN_W, CONTENT_H, { fit, position: fit === 'contain' ? 'centre' : 'top', kernel: 'lanczos3', background: '#000' })
+    .flatten({ background: '#000' })
     .toBuffer();
 
   const win = await sharp(titleBar())
@@ -65,10 +69,11 @@ export async function frame(raw) {
 /** Encode to WebP, stepping quality down until it fits the size budget. */
 export async function encode(input) {
   let out;
-  for (const quality of [82, 74, 66]) {
+  for (const quality of [82, 74, 66, 58]) {
     out = await sharp(input).webp({ quality, alphaQuality: 90, effort: 6, smartSubsample: true }).toBuffer();
-    if (out.length <= MAX_BYTES) break;
+    if (out.length <= MAX_BYTES) return out;
   }
+  console.warn(`Image is ${(out.length / 1024).toFixed(0)} KB even at quality 58 (budget ${MAX_BYTES / 1024} KB)`);
   return out;
 }
 

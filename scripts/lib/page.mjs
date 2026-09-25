@@ -43,43 +43,62 @@ async function dismissConsent(page, extraClicks = []) {
 export async function fetchImage(url) {
   try {
     const res = await fetch(url, { signal: AbortSignal.timeout(30_000) });
-    if (!res.ok) return { ok: false, reason: `HTTP ${res.status}` };
+    if (!res.ok) return { ok: false, retry: res.status >= 500, reason: `HTTP ${res.status}` };
     return { ok: true, png: await sharp(Buffer.from(await res.arrayBuffer())).png().toBuffer() };
   } catch (err) {
-    return { ok: false, reason: err.message.slice(0, 120) };
+    return { ok: false, retry: true, reason: err.message.slice(0, 120) };
   }
 }
 
 /**
- * Load a page and take a viewport screenshot.
- * Returns { ok: true, png } or { ok: false, reason }. Never tries to get past bot challenges.
+ * Load a page in a fresh browser context and take a viewport screenshot.
+ * Returns { ok: true, png } or { ok: false, retry, reason }. Never tries to get past bot challenges.
+ * `retry` is false for failures that won't change a few seconds later (4xx, challenges, redirects).
  */
-export async function capturePage(context, entry, defaults) {
+export async function capturePage(browser, entry, defaults) {
   const shot = entry.shot;
   const target = shot.captureUrl ?? entry.url;
-  const page = await context.newPage();
+  // A context per page: no cookies or consent state leak between sites captured in parallel.
+  // bypassCSP only lets our own style tag in on sites with strict CSPs.
+  const context = await browser.newContext({
+    viewport: defaults.viewport ?? { width: 1440, height: 900 },
+    deviceScaleFactor: 1,
+    colorScheme: 'dark',
+    reducedMotion: 'reduce',
+    locale: 'en-US',
+    timezoneId: 'UTC',
+    bypassCSP: true,
+  });
   try {
+    const page = await context.newPage();
     const response = await page.goto(target, { waitUntil: 'domcontentloaded', timeout: 45_000 });
     const status = response?.status() ?? 0;
-    if (status >= 400) return { ok: false, reason: `HTTP ${status}` };
+    if (status >= 400) return { ok: false, retry: status >= 500, reason: `HTTP ${status}` };
 
     await page.waitForLoadState('networkidle', { timeout: 10_000 }).catch(() => {});
     await page.evaluate(() => document.fonts?.ready).catch(() => {});
 
     if (!shot.allowRedirect && host(page.url()) !== host(target))
-      return { ok: false, reason: `redirected to ${host(page.url())}` };
+      return { ok: false, retry: false, reason: `redirected to ${host(page.url())}` };
 
     const title = await page.title().catch(() => '');
     const text = await page.evaluate(() => document.body?.innerText?.slice(0, 2000) ?? '').catch(() => '');
     const challengeFrame = await page.locator('iframe[src*="challenges.cloudflare.com"], #challenge-form, #cf-challenge-running').count();
     if (CHALLENGE_TEXT.test(title) || challengeFrame || (text.length < 400 && CHALLENGE_TEXT.test(text)))
-      return { ok: false, reason: `bot challenge ("${title.slice(0, 40)}")` };
+      return { ok: false, retry: false, reason: `bot challenge ("${title.slice(0, 40)}")` };
 
     await dismissConsent(page, shot.click);
     const hide = (shot.hide ?? []).map((s) => `${s}{display:none!important}`).join('\n');
     await page.addStyleTag({ content: STABILIZE_CSS + hide + (shot.css ?? '') });
     await page.evaluate((y) => window.scrollTo(0, y), shot.scrollY ?? 0);
     await page.waitForTimeout(shot.waitMs ?? defaults.waitMs ?? 1500);
+    // Give images on screen (including lazy ones) a few seconds to finish loading.
+    await page.evaluate(() => {
+      const onScreen = [...document.images].filter((img) => img.getBoundingClientRect().top < innerHeight);
+      onScreen.forEach((img) => { img.loading = 'eager'; });
+      const loaded = onScreen.map((img) => (img.complete ? null : new Promise((r) => { img.onload = img.onerror = r; })));
+      return Promise.race([Promise.all(loaded), new Promise((r) => setTimeout(r, 5000))]);
+    }).catch(() => {});
     // Pause hero videos so the frame we grab depends less on playback timing, and drop ad slots.
     await page.evaluate((overlays) => {
       document.querySelectorAll('video').forEach((v) => v.pause());
@@ -89,12 +108,12 @@ export async function capturePage(context, entry, defaults) {
     const png = await page.screenshot({ clip: shot.clip, animations: 'disabled', timeout: 20_000 });
     const { channels } = await sharp(png).stats();
     const spread = channels.slice(0, 3).reduce((sum, c) => sum + c.stdev, 0) / 3;
-    if (spread < 3) return { ok: false, reason: 'blank page' };
+    if (spread < 3) return { ok: false, retry: true, reason: 'blank page' };
 
     return { ok: true, png };
   } catch (err) {
-    return { ok: false, reason: err.message.split('\n')[0].slice(0, 120) };
+    return { ok: false, retry: true, reason: err.message.split('\n')[0].slice(0, 120) };
   } finally {
-    await page.close().catch(() => {});
+    await context.close().catch(() => {});
   }
 }

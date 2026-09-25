@@ -28,7 +28,7 @@ success = (core * polish) * (genre * trend) * (art * social)
 
 ## 🧩 Game Engine & Template
 
-`Godot Engine`: Your free, open‑source game engine. Develop your 2D & 3D games, cross-platform projects, or even XR ideas!
+`Godot Engine`: Your free, open-source game engine. Develop your 2D & 3D games, cross-platform projects, or even XR ideas!
 Paired with the `Four Games Template`, you get a project template with ongoing video tutorial support. Focused on architecture and automation with Controller-First design.
 
 <table>
@@ -37,7 +37,7 @@ Paired with the `Four Games Template`, you get a project template with ongoing v
 <a href="https://github.com/fourgames/template"><img src=".github/images/shots/four-games-template.webp" width="240" alt="Four Games Template"></a><br>
 <a href="https://github.com/fourgames/template"><b>Four Games Template</b></a>
 <br><sub>Open Source</sub>
-<br><sub><i>Controller-first Godot template</i></sub>
+<br><sub><i>Controller-First Godot template</i></sub>
 </td>
 <td align="center" valign="top">
 <a href="https://store.steampowered.com/app/404790/Godot_Engine/"><img src=".github/images/shots/godot-engine.webp" width="240" alt="Godot Engine"></a><br>
@@ -72,7 +72,7 @@ AI won't make your game fun, but it can take the tedious parts off your plate. `
 
 ## 🎨 Visuals & Art
 
-"Art stops the scroll." Use these tools to create your visuals, find assets, and palettes. Also, watch the interview with the creator of `Tinyfolks` on how he created a successful `Steam` game without "art skills" by keeping things simple.
+"Art stops the scroll." Use these tools to create your visuals, and these libraries for assets, textures, animations and palettes. Also, watch the interview with the creator of `Tinyfolks` on how he created a successful `Steam` game without "art skills" by keeping things simple.
 
 #### Tools
 
@@ -92,7 +92,7 @@ AI won't make your game fun, but it can take the tedious parts off your plate. `
 <td align="center" valign="top">
 <a href="https://www.photopea.com/"><img src=".github/images/placeholder.webp" width="240" alt="Photopea"></a><br>
 <a href="https://www.photopea.com/"><b>Photopea</b></a>
-<br><sub>2D · Web</sub>
+<br><sub>2D · Free · Web</sub>
 <br><sub><i>Photoshop in the browser</i></sub>
 </td>
 </tr>
@@ -110,7 +110,7 @@ AI won't make your game fun, but it can take the tedious parts off your plate. `
 <td align="center" valign="top">
 <a href="https://www.fab.com"><img src=".github/images/manual/fab.webp" width="240" alt="Fab"></a><br>
 <a href="https://www.fab.com"><b>Fab</b></a>
-<br><sub>2D · 3D</sub>
+<br><sub>2D · 3D · Free · Paid</sub>
 </td>
 <td align="center" valign="top">
 <a href="https://store.godotengine.org"><img src=".github/images/shots/godot-asset-store.webp" width="240" alt="Godot Asset Store"></a><br>
@@ -122,11 +122,11 @@ AI won't make your game fun, but it can take the tedious parts off your plate. `
 <td align="center" valign="top">
 <a href="https://itch.io/game-assets/free"><img src=".github/images/shots/itch-free-assets.webp" width="240" alt="itch.io Free Assets"></a><br>
 <a href="https://itch.io/game-assets/free"><b>itch.io Free Assets</b></a>
-<br><sub>2D · 3D · Music · SFX · Free</sub>
+<br><sub>2D · 3D · Free</sub>
 </td>
 <td align="center" valign="top">
-<a href="https://www.kenney.nl/assets"><img src=".github/images/shots/kenney.webp" width="240" alt="Kenney"></a><br>
-<a href="https://www.kenney.nl/assets"><b>Kenney</b></a>
+<a href="https://kenney.nl/assets"><img src=".github/images/shots/kenney.webp" width="240" alt="Kenney"></a><br>
+<a href="https://kenney.nl/assets"><b>Kenney</b></a>
 <br><sub>2D · 3D · Free</sub>
 </td>
 <td align="center" valign="top">
@@ -153,7 +153,7 @@ AI won't make your game fun, but it can take the tedious parts off your plate. `
 <td align="center" valign="top">
 <a href="https://lospec.com/palette-list"><img src=".github/images/shots/lospec.webp" width="240" alt="Lospec"></a><br>
 <a href="https://lospec.com/palette-list"><b>Lospec</b></a>
-<br><sub>Palettes</sub>
+<br><sub>Palettes · Free</sub>
 </td>
 <td align="center" valign="top">
 <a href="https://www.mixamo.com/"><img src=".github/images/shots/mixamo.webp" width="240" alt="Mixamo"></a><br>
@@ -162,17 +162,17 @@ AI won't make your game fun, but it can take the tedious parts off your plate. `
 <br><sub><i>Auto-rigging &amp; mocap animations</i></sub>
 </td>
 <td align="center" valign="top">
-<a href="https://www.poliigon.com/search?credit=0"><img src=".github/images/placeholder.webp" width="240" alt="Poliigon"></a><br>
-<a href="https://www.poliigon.com/search?credit=0"><b>Poliigon</b></a>
+<a href="https://www.poliigon.com/free"><img src=".github/images/placeholder.webp" width="240" alt="Poliigon"></a><br>
+<a href="https://www.poliigon.com/free"><b>Poliigon</b></a>
 <br><sub>Textures · Free</sub>
-<br><sub><i>Filtered to free textures</i></sub>
+<br><sub><i>Free PBR textures, models &amp; HDRIs</i></sub>
 </td>
 </tr>
 <tr>
 <td align="center" valign="top">
 <a href="https://www.textures.com/"><img src=".github/images/shots/textures-com.webp" width="240" alt="Textures.com"></a><br>
 <a href="https://www.textures.com/"><b>Textures.com</b></a>
-<br><sub>Textures</sub>
+<br><sub>Textures · Free · Paid</sub>
 </td>
 <td></td>
 <td></td>
@@ -200,8 +200,8 @@ Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made font
 <table>
 <tr>
 <td align="center" valign="top">
-<a href="http://www.pentacom.jp/pentacom/bitfontmaker2/"><img src=".github/images/shots/bitfontmaker2.webp" width="240" alt="BitFontMaker2"></a><br>
-<a href="http://www.pentacom.jp/pentacom/bitfontmaker2/"><b>BitFontMaker2</b></a>
+<a href="https://www.pentacom.jp/pentacom/bitfontmaker2/"><img src=".github/images/shots/bitfontmaker2.webp" width="240" alt="BitFontMaker2"></a><br>
+<a href="https://www.pentacom.jp/pentacom/bitfontmaker2/"><b>BitFontMaker2</b></a>
 <br><sub>Pixel Fonts · Web</sub>
 <br><sub><i>Draw your own pixel font</i></sub>
 </td>
@@ -234,7 +234,7 @@ Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made font
 <td align="center" valign="top">
 <a href="https://fontawesome.com/icons"><img src=".github/images/shots/font-awesome.webp" width="240" alt="Font Awesome"></a><br>
 <a href="https://fontawesome.com/icons"><b>Font Awesome</b></a>
-<br><sub>Icons</sub>
+<br><sub>Icons · Free · Paid</sub>
 </td>
 <td align="center" valign="top">
 <a href="https://game-icons.net"><img src=".github/images/shots/game-icons.webp" width="240" alt="Game-Icons"></a><br>
@@ -251,7 +251,7 @@ Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made font
 
 ## 🔊 Audio & Sound Design
 
-"People will watch a blurry video, but they won't watch one with bad audio." Sound is what truly elevates a project to the next level. Use these tools to `compose` your own tracks or use these resources for `ready-made` audio to ensure your game feels as good as it looks.
+"People will watch a blurry video, but they won't watch one with bad audio." Sound is what truly elevates a project to the next level. Use these tools to `compose` your own tracks, `generate` retro SFX, or grab `ready-made` audio to ensure your game feels as good as it looks.
 
 #### DAWs
 
@@ -265,7 +265,8 @@ Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made font
 <td align="center" valign="top">
 <a href="https://www.reaper.fm"><img src=".github/images/shots/reaper.webp" width="240" alt="Reaper"></a><br>
 <a href="https://www.reaper.fm"><b>Reaper</b></a>
-<br><sub>Music · SFX</sub>
+<br><sub>Music · SFX · Paid</sub>
+<br><sub><i>Generous 60-day trial</i></sub>
 </td>
 <td></td>
 </tr>
@@ -278,7 +279,7 @@ Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made font
 <td align="center" valign="top">
 <a href="https://www.beepbox.co/"><img src=".github/images/shots/beepbox.webp" width="240" alt="BeepBox"></a><br>
 <a href="https://www.beepbox.co/"><b>BeepBox</b></a>
-<br><sub>Music · Web</sub>
+<br><sub>Music · Free · Web</sub>
 </td>
 <td align="center" valign="top">
 <a href="https://yurisizov.itch.io/boscaceoil-blue"><img src=".github/images/shots/bosca-ceoil-blue.webp" width="240" alt="Bosca Ceoil Blue"></a><br>
@@ -328,6 +329,11 @@ Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made font
 </tr>
 <tr>
 <td align="center" valign="top">
+<a href="https://itch.io/game-assets/free/tag-sound-effects"><img src=".github/images/shots/itch-free-audio.webp" width="240" alt="itch.io Free Audio"></a><br>
+<a href="https://itch.io/game-assets/free/tag-sound-effects"><b>itch.io Free Audio</b></a>
+<br><sub>Music · SFX · Free</sub>
+</td>
+<td align="center" valign="top">
 <a href="https://kenney.nl/assets/category:Audio"><img src=".github/images/shots/kenney-audio.webp" width="240" alt="Kenney Audio"></a><br>
 <a href="https://kenney.nl/assets/category:Audio"><b>Kenney Audio</b></a>
 <br><sub>Music · SFX · Free</sub>
@@ -337,26 +343,26 @@ Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made font
 <a href="https://opengameart.org/art-search-advanced?field_art_type_tid%5B%5D=12&amp;field_art_type_tid%5B%5D=13"><b>OpenGameArt Audio</b></a>
 <br><sub>Music · SFX · Free</sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top">
 <a href="https://sonniss.com/gameaudiogdc"><img src=".github/images/placeholder.webp" width="240" alt="Sonniss GDC Bundle"></a><br>
 <a href="https://sonniss.com/gameaudiogdc"><b>Sonniss GDC Bundle</b></a>
 <br><sub>SFX · Free</sub>
 <br><sub><i>Huge royalty-free yearly bundle</i></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top">
 <a href="https://www.weloveindies.com/en/welcome/jammers"><img src=".github/images/shots/weloveindies.webp" width="240" alt="WeLoveIndies"></a><br>
 <a href="https://www.weloveindies.com/en/welcome/jammers"><b>WeLoveIndies</b></a>
 <br><sub>Music · SFX · Free</sub>
-<br><sub><i>Free for game jams</i></sub>
+<br><sub><i>Free for jams; commercial use needs a license</i></sub>
 </td>
 <td align="center" valign="top">
 <a href="https://www.zapsplat.com"><img src=".github/images/manual/zapsplat.webp" width="240" alt="Zapsplat"></a><br>
 <a href="https://www.zapsplat.com"><b>Zapsplat</b></a>
-<br><sub>SFX</sub>
+<br><sub>SFX · Free</sub>
+<br><sub><i>Free with attribution</i></sub>
 </td>
-<td></td>
 </tr>
 </table>
 
@@ -426,6 +432,12 @@ Building a great game is only half the battle; you need to make sure people can 
 <table>
 <tr>
 <td align="center" valign="top">
+<a href="https://www.letstrack.games"><img src=".github/images/placeholder.webp" width="240" alt="Letstrack"></a><br>
+<a href="https://www.letstrack.games"><b>Letstrack</b></a>
+<br><sub>Paid</sub>
+<br><sub><i>Formerly WhoPlays.games. Find creators &amp; track coverage</i></sub>
+</td>
+<td align="center" valign="top">
 <a href="https://niklasnotes.com"><img src=".github/images/shots/niklas-notes.webp" width="240" alt="Niklas Notes"></a><br>
 <a href="https://niklasnotes.com"><b>Niklas Notes</b></a>
 <br><sub><i>What players say in Steam reviews</i></sub>
@@ -434,10 +446,6 @@ Building a great game is only half the battle; you need to make sure people can 
 <a href="https://sullygnome.com"><img src=".github/images/manual/sullygnome.webp" width="240" alt="SullyGnome"></a><br>
 <a href="https://sullygnome.com"><b>SullyGnome</b></a>
 <br><sub><i>Twitch stats</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://whoplays.games"><img src=".github/images/manual/whoplays-games.webp" width="240" alt="WhoPlays.games"></a><br>
-<a href="https://whoplays.games"><b>WhoPlays.games</b></a>
 </td>
 </tr>
 </table>

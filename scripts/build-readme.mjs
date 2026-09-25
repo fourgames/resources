@@ -40,7 +40,14 @@ function table(entries, { columns, thumbWidth }) {
 }
 
 function render() {
-  const { defaults, sections, entries } = loadData();
+  let data;
+  try {
+    data = loadData();
+  } catch (err) {
+    console.error(err.message);
+    process.exit(1);
+  }
+  const { defaults, sections, entries } = data;
   const opts = { columns: defaults.columns ?? 3, thumbWidth: defaults.thumbWidth ?? 240 };
   const out = [];
   for (const section of sections) {

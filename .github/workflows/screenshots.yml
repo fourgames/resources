@@ -25,7 +25,7 @@ concurrency:
 jobs:
   capture:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v5
 
@@ -66,9 +66,18 @@ jobs:
             echo "No visible changes, nothing to commit."
             exit 0
           fi
-          git commit -m "Update screenshots"
+          git commit --quiet -m "Update screenshots"
           for attempt in 1 2 3; do
-            git pull --rebase --quiet && git push && exit 0
+            # On conflict keep the bot's images (-X theirs = the commit being replayed), then
+            # rebuild README.md so it matches whatever resources.yml is on main now.
+            if git pull --rebase --quiet -X theirs; then
+              npm run build --silent
+              git add README.md
+              git diff --cached --quiet || git commit --quiet --amend --no-edit
+              git push --quiet && exit 0
+            else
+              git rebase --abort || true
+            fi
             sleep $((attempt * 10))
           done
           exit 1

@@ -5,9 +5,34 @@ contributing, especially via bug reports or pull requests.
 
 ## Table of contents
 
+- [Adding a resource](#adding-a-resource)
 - [Reporting bugs](#reporting-bugs)
 - [Proposing features or improvements](#proposing-features-or-improvements)
 - [Contributing pull requests](#contributing-pull-requests)
+
+## Adding a resource
+
+`README.md` is generated. Don't edit it by hand. Instead:
+
+1. Add an entry to the right group in [`resources.yml`](resources.yml):
+   ```yaml
+   - id: kenney            # optional, becomes the screenshot filename
+     name: Kenney
+     url: https://www.kenney.nl/assets
+     tags: [2D, 3D, Free]  # must be listed under `tags:` at the top
+     note: Short one-liner # optional
+   ```
+2. Run `npm ci`, then `npm run capture -- --only kenney` to take the screenshot (needs `npx playwright install chromium` once).
+3. Run `npm run build` to regenerate `README.md`, then commit everything.
+
+If you skip step 2, the daily [Screenshots workflow](.github/workflows/screenshots.yml) captures it for you.
+
+**Sites that block automated browsers** (HTTP 403, "verify you are human"): don't try to get around it.
+- Take a normal screenshot yourself. On a Mac, press Cmd+Shift+4, then Space, and click the browser window.
+- Run `npm run add-screenshot -- ~/Desktop/shot.png <id>`.
+- Set `shot: { manual: manual/<id>.webp }` on that entry.
+
+Other per-site options are `waitMs`, `hide` (CSS selectors, e.g. a cookie banner), `css`, `click`, `scrollY`, `captureUrl`, `allowRedirect`, `diffThreshold`, `image` (frame a fixed image such as a YouTube thumbnail) and `skip`. See [`scripts/lib/page.mjs`](scripts/lib/page.mjs).
 
 ## Reporting bugs
 

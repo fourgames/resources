@@ -31,22 +31,22 @@ const manifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8'
 const report = [];
 const now = new Date();
 
-async function processEntry(context, entry) {
+async function processEntry(browser, entry) {
   const row = { id: entry.id, status: '', diff: '', kb: '', reason: '' };
   report.push(row);
   if (entry.shot.manual) return Object.assign(row, { status: 'manual' });
   if (entry.shot.skip && !only?.has(entry.id)) return Object.assign(row, { status: 'skipped' });
 
-  const attempt = () => (entry.shot.image ? fetchImage(entry.shot.image) : capturePage(context, entry, defaults));
+  const attempt = () => (entry.shot.image ? fetchImage(entry.shot.image) : capturePage(browser, entry, defaults));
   let result = await attempt();
-  if (!result.ok) {
+  if (!result.ok && result.retry) {
     await new Promise((r) => setTimeout(r, 5000));
     result = await attempt();
   }
   if (!result.ok) return Object.assign(row, { status: 'failed', reason: result.reason });
 
   writeFileSync(join(CACHE, 'raw', `${entry.id}.png`), result.png);
-  const next = await frame(result.png);
+  const next = await frame(result.png, { fit: entry.shot.fit });
   const file = join(SHOTS_DIR, `${entry.id}.webp`);
   const meta = manifest[entry.id];
   row.kb = (next.length / 1024).toFixed(0);
@@ -55,7 +55,8 @@ async function processEntry(context, entry) {
   let reason = '';
   if (!existsSync(file)) [replace, reason] = [true, 'new'];
   else if (args.force) [replace, reason] = [true, 'forced'];
-  else if (meta?.frameVersion !== FRAME_VERSION) [replace, reason] = [true, 'frame changed'];
+  else if (!meta) [replace, reason] = [true, 'untracked'];
+  else if (meta.frameVersion !== FRAME_VERSION) [replace, reason] = [true, 'frame changed'];
   else {
     const ratio = await diffRatio(readFileSync(file), next);
     row.diff = `${(ratio * 100).toFixed(1)}%`;
@@ -74,20 +75,16 @@ async function processEntry(context, entry) {
 }
 
 const browser = await chromium.launch();
-const context = await browser.newContext({
-  viewport: defaults.viewport ?? { width: 1440, height: 900 },
-  deviceScaleFactor: 1,
-  colorScheme: 'dark',
-  reducedMotion: 'reduce',
-  locale: 'en-US',
-  timezoneId: 'UTC',
-});
-
 const queue = entries.filter((e) => !only || only.has(e.id));
-const workers = Array.from({ length: Math.max(1, Number(args.concurrency)) }, async () => {
+const concurrency = Math.max(1, Number.parseInt(args.concurrency, 10) || 4);
+const workers = Array.from({ length: concurrency }, async () => {
   while (queue.length) {
     const entry = queue.shift();
-    const row = await processEntry(context, entry);
+    // One broken site (or a corrupt committed image) must not sink the whole run.
+    const row = await processEntry(browser, entry).catch((err) => {
+      const row = report.find((r) => r.id === entry.id);
+      return Object.assign(row, { status: 'failed', reason: `error: ${err.message.split('\n')[0].slice(0, 100)}` });
+    });
     console.log(`${row.status.padEnd(9)} ${entry.id.padEnd(22)} ${row.diff.padStart(6)} ${row.reason}`);
   }
 });
@@ -116,4 +113,11 @@ if (process.env.GITHUB_STEP_SUMMARY) {
   ];
   appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join('\n') + '\n');
 }
-if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, `failed_count=${failed.length}\n`);
+if (process.env.GITHUB_ACTIONS) for (const r of failed) console.log(`::warning title=Capture failed: ${r.id}::${r.reason}`);
+
+// Every capture failing means something is wrong with the runner, not the sites.
+const attempted = report.filter((r) => !['manual', 'skipped'].includes(r.status));
+if (attempted.length > 1 && failed.length === attempted.length) {
+  console.error('Every capture failed.');
+  process.exit(1);
+}

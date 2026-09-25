@@ -36,7 +36,7 @@ sections:
     title: Game Engine & Template
     emoji: "🧩"
     intro: |
-      `Godot Engine`: Your free, open‑source game engine. Develop your 2D & 3D games, cross-platform projects, or even XR ideas!
+      `Godot Engine`: Your free, open-source game engine. Develop your 2D & 3D games, cross-platform projects, or even XR ideas!
       Paired with the `Four Games Template`, you get a project template with ongoing video tutorial support. Focused on architecture and automation with Controller-First design.
     groups:
       - entries:
@@ -44,12 +44,12 @@ sections:
             name: Godot Engine
             url: https://store.steampowered.com/app/404790/Godot_Engine/
             tags: [2D, 3D, Open Source]
-            shot: { waitMs: 6000 } # let the Steam trailer poster load
+            shot: { waitMs: 6000, hide: [.banner_open_in_steam] } # let the Steam trailer poster load
           - id: four-games-template
             name: Four Games Template
             url: https://github.com/fourgames/template
             tags: [Open Source]
-            note: Controller-first Godot template
+            note: Controller-First Godot template
 
   - id: ai
     title: AI Assistants
@@ -73,7 +73,7 @@ sections:
     title: Visuals & Art
     emoji: "🎨"
     intro: |
-      "Art stops the scroll." Use these tools to create your visuals, find assets, and palettes. Also, watch the interview with the creator of `Tinyfolks` on how he created a successful `Steam` game without "art skills" by keeping things simple.
+      "Art stops the scroll." Use these tools to create your visuals, and these libraries for assets, textures, animations and palettes. Also, watch the interview with the creator of `Tinyfolks` on how he created a successful `Steam` game without "art skills" by keeping things simple.
     groups:
       - title: Tools
         entries:
@@ -81,17 +81,17 @@ sections:
             name: Blender
             url: https://store.steampowered.com/app/365670/Blender/
             tags: [3D, Open Source]
-            shot: { waitMs: 6000 } # let the Steam trailer poster load
+            shot: { waitMs: 6000, hide: [.banner_open_in_steam] } # let the Steam trailer poster load
           - id: aseprite
             name: Aseprite
             url: https://store.steampowered.com/app/431730/Aseprite/
             tags: [2D, Paid]
             note: Pixel art editor
-            shot: { waitMs: 6000 } # let the Steam trailer poster load
+            shot: { waitMs: 6000, hide: [.banner_open_in_steam] } # let the Steam trailer poster load
           - id: photopea
             name: Photopea
             url: https://www.photopea.com/
-            tags: [2D, Web]
+            tags: [2D, Free, Web]
             note: Photoshop in the browser
             # Blocks automated browsers (HTTP 403)
             shot: { skip: true }
@@ -104,13 +104,14 @@ sections:
           - id: fab
             name: Fab
             url: https://www.fab.com
-            tags: [2D, 3D]
+            tags: [2D, 3D, Free, Paid]
             # Blocks automated browsers (HTTP 403)
             shot: { manual: manual/fab.webp }
           - id: kenney
             name: Kenney
-            url: https://www.kenney.nl/assets
+            url: https://kenney.nl/assets
             tags: [2D, 3D, Free]
+            shot: { hide: [.floating-promotion] }
           - id: poly-pizza
             name: Poly Pizza
             url: https://poly.pizza/
@@ -126,19 +127,19 @@ sections:
           - id: itch-free-assets
             name: itch.io Free Assets
             url: https://itch.io/game-assets/free
-            tags: [2D, 3D, Music, SFX, Free]
+            tags: [2D, 3D, Free]
       - title: Textures, Animations & Palettes
         entries:
           - id: textures-com
             name: Textures.com
             url: https://www.textures.com/
-            tags: [Textures]
+            tags: [Textures, Free, Paid]
             shot: { waitMs: 6000 }
           - id: poliigon
             name: Poliigon
-            url: https://www.poliigon.com/search?credit=0
+            url: https://www.poliigon.com/free
             tags: [Textures, Free]
-            note: Filtered to free textures
+            note: Free PBR textures, models & HDRIs
             # Blocks automated browsers (HTTP 403)
             shot: { skip: true }
           - id: mixamo
@@ -150,7 +151,7 @@ sections:
           - id: lospec
             name: Lospec
             url: https://lospec.com/palette-list
-            tags: [Palettes]
+            tags: [Palettes, Free]
       - title: Watch
         entries:
           - id: tinyfolks-interview
@@ -158,7 +159,7 @@ sections:
             url: https://youtu.be/rsoUzF3RdsU?si=WE67ZP_uEQoh4Nwf&t=1140
             tags: [Video]
             featured: true
-            shot: { image: "https://i.ytimg.com/vi/rsoUzF3RdsU/maxresdefault.jpg" }
+            shot: { image: "https://i.ytimg.com/vi/rsoUzF3RdsU/maxresdefault.jpg", fit: contain }
 
   - id: fonts-icons
     title: Fonts & Icons
@@ -172,7 +173,7 @@ sections:
             name: Google Fonts
             url: https://fonts.google.com
             tags: [Fonts, Free]
-            shot: { hide: [gf-notifications] }
+            shot: { hide: [gf-notifications, gf-shopping-bag-callout] }
           - id: fontsource
             name: Fontsource
             url: https://github.com/fontsource/fontsource
@@ -183,7 +184,7 @@ sections:
             tags: [Fonts, Free]
           - id: bitfontmaker2
             name: BitFontMaker2
-            url: http://www.pentacom.jp/pentacom/bitfontmaker2/
+            url: https://www.pentacom.jp/pentacom/bitfontmaker2/
             tags: [Pixel Fonts, Web]
             note: Draw your own pixel font
       - title: Icons
@@ -195,25 +196,26 @@ sections:
           - id: font-awesome
             name: Font Awesome
             url: https://fontawesome.com/icons
-            tags: [Icons]
+            tags: [Icons, Free, Paid]
           - id: google-icons
             name: Google Icons
             url: https://fonts.google.com/icons
             tags: [Icons, Free]
-            shot: { hide: [gf-notifications] }
+            shot: { hide: [gf-notifications, gf-shopping-bag-callout] }
 
   - id: audio
     title: Audio & Sound Design
     emoji: "🔊"
     intro: |
-      "People will watch a blurry video, but they won't watch one with bad audio." Sound is what truly elevates a project to the next level. Use these tools to `compose` your own tracks or use these resources for `ready-made` audio to ensure your game feels as good as it looks.
+      "People will watch a blurry video, but they won't watch one with bad audio." Sound is what truly elevates a project to the next level. Use these tools to `compose` your own tracks, `generate` retro SFX, or grab `ready-made` audio to ensure your game feels as good as it looks.
     groups:
       - title: DAWs
         entries:
           - id: reaper
             name: Reaper
             url: https://www.reaper.fm
-            tags: [Music, SFX]
+            tags: [Music, SFX, Paid]
+            note: Generous 60-day trial
           - id: fl-studio
             name: FL Studio
             url: https://www.image-line.com
@@ -238,7 +240,7 @@ sections:
           - id: beepbox
             name: BeepBox
             url: https://www.beepbox.co/
-            tags: [Music, Web]
+            tags: [Music, Free, Web]
       - title: Libraries
         entries:
           - id: freesound
@@ -249,7 +251,8 @@ sections:
           - id: zapsplat
             name: Zapsplat
             url: https://www.zapsplat.com
-            tags: [SFX]
+            tags: [SFX, Free]
+            note: Free with attribution
             # Blocks automated browsers (HTTP 403)
             shot: { manual: manual/zapsplat.webp }
           - id: free-music-archive
@@ -265,6 +268,7 @@ sections:
             name: Kenney Audio
             url: https://kenney.nl/assets/category:Audio
             tags: [Music, SFX, Free]
+            shot: { hide: [.floating-promotion] }
           - id: sonniss
             name: Sonniss GDC Bundle
             url: https://sonniss.com/gameaudiogdc
@@ -276,8 +280,12 @@ sections:
             name: WeLoveIndies
             url: https://www.weloveindies.com/en/welcome/jammers
             tags: [Music, SFX, Free]
-            note: Free for game jams
+            note: Free for jams; commercial use needs a license
             shot: { hide: [.wli-dsgvo] }
+          - id: itch-free-audio
+            name: itch.io Free Audio
+            url: https://itch.io/game-assets/free/tag-sound-effects
+            tags: [Music, SFX, Free]
           - id: epidemic-sound
             name: Epidemic Sound
             url: https://www.epidemicsound.com
@@ -296,17 +304,18 @@ sections:
             name: OBS Studio
             url: https://store.steampowered.com/app/1905180/OBS_Studio/
             tags: [Video, Open Source]
-            shot: { waitMs: 6000 } # let the Steam trailer poster load
+            shot: { waitMs: 6000, hide: [.banner_open_in_steam] } # let the Steam trailer poster load
           - id: godot-movie-writer
             name: Godot Movie Maker Mode
             url: https://www.youtube.com/watch?v=sN2Eiya_koA
             tags: [Video]
             note: Render perfectly smooth footage
-            shot: { image: "https://i.ytimg.com/vi/sN2Eiya_koA/maxresdefault.jpg" }
+            shot: { image: "https://i.ytimg.com/vi/sN2Eiya_koA/maxresdefault.jpg", fit: contain }
           - id: davinci-resolve
             name: DaVinci Resolve
             url: https://www.blackmagicdesign.com/products/davinciresolve
             tags: [Video, Free]
+            shot: { captureUrl: "https://www.blackmagicdesign.com/products/davinciresolve/edit" }
           - id: blender-video
             name: Blender Video Editing
             url: https://www.blender.org/features/video-editing/
@@ -325,6 +334,7 @@ sections:
             url: https://www.steamcapsule.com/artists
             tags: [Art]
             note: Hire capsule artists
+            shot: { waitMs: 5000, hide: ['a[href*="bsky.app"]'] }
           - id: steam-tag-helper
             name: Steam Tag Helper
             url: https://steamtaghelper.com
@@ -345,11 +355,13 @@ sections:
             note: Twitch stats
             # Blocks automated browsers (HTTP 403)
             shot: { manual: manual/sullygnome.webp }
-          - id: whoplays-games
-            name: WhoPlays.games
-            url: https://whoplays.games
+          - id: letstrack
+            name: Letstrack
+            url: https://www.letstrack.games
+            tags: [Paid]
+            note: Formerly WhoPlays.games. Find creators & track coverage
             # Blocks automated browsers (HTTP 403)
-            shot: { manual: manual/whoplays-games.webp }
+            shot: { skip: true }
       - title: Reach & Publishing
         entries:
           - id: localizedirect
