@@ -163,7 +163,7 @@ sections:
             url: https://lospec.com/palette-list
             tags: [Palettes, Free]
             wide: true
-      - title: Watch
+      - title: "▶️ Video: How this Dev's First Game Became a Success (Jackie Codes)"
         entries:
           - id: tinyfolks-interview
             name: Making a Steam hit without "art skills" (Tinyfolks)

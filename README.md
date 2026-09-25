@@ -87,7 +87,7 @@ AI makes game development accessible to more people. For me personally, it raise
   <a href="https://lospec.com/palette-list"><img width="100%" src=".github/images/shots/lospec.webp" alt="Lospec · Palettes · Free" title="Lospec · Palettes · Free" /></a>
 </p>
 
-#### Watch
+#### ▶️ Video: How this Dev's First Game Became a Success (Jackie Codes)
 
 <p align="center">
   <a href="https://youtu.be/rsoUzF3RdsU?si=WE67ZP_uEQoh4Nwf&amp;t=1140"><img width="100%" src=".github/images/shots/tinyfolks-interview.webp" alt="Making a Steam hit without &quot;art skills&quot; (Tinyfolks) · Video" title="Making a Steam hit without &quot;art skills&quot; (Tinyfolks) · Video" /></a>
