@@ -78,13 +78,13 @@ AI won't make your game fun, but it can take the tedious parts off your plate. `
 #### Textures, Animations & Palettes
 
 <p align="center">
-  <a href="https://lospec.com/palette-list"><img width="32%" src=".github/images/shots/lospec.webp" alt="Lospec · Palettes · Free" title="Lospec · Palettes · Free" /></a>
   <a href="https://www.mixamo.com/"><img width="32%" src=".github/images/shots/mixamo.webp" alt="Mixamo · Animations · Free · Auto-rigging &amp; mocap animations" title="Mixamo · Animations · Free · Auto-rigging &amp; mocap animations" /></a>
   <a href="https://www.poliigon.com/free"><img width="32%" src=".github/images/shots/poliigon.webp" alt="Poliigon · Textures · Free · Free PBR textures, models &amp; HDRIs" title="Poliigon · Textures · Free · Free PBR textures, models &amp; HDRIs" /></a>
+  <a href="https://www.textures.com/"><img width="32%" src=".github/images/shots/textures-com.webp" alt="Textures.com · Textures · Free · Paid" title="Textures.com · Textures · Free · Paid" /></a>
 </p>
 
 <p align="center">
-  <a href="https://www.textures.com/"><img width="100%" src=".github/images/shots/textures-com.webp" alt="Textures.com · Textures · Free · Paid" title="Textures.com · Textures · Free · Paid" /></a>
+  <a href="https://lospec.com/palette-list"><img width="100%" src=".github/images/shots/lospec.webp" alt="Lospec · Palettes · Free" title="Lospec · Palettes · Free" /></a>
 </p>
 
 #### Watch

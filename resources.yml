@@ -161,6 +161,7 @@ sections:
             name: Lospec
             url: https://lospec.com/palette-list
             tags: [Palettes, Free]
+            wide: true
       - title: Watch
         entries:
           - id: tinyfolks-interview
