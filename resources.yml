@@ -102,8 +102,8 @@ sections:
             url: https://www.photopea.com/
             tags: [2D, Free, Web]
             note: Photoshop in the browser
-            # Blocks automated browsers (HTTP 403)
-            shot: { skip: true }
+            # Blocks automated browsers (Cloudflare check), so this uses the logo from Photopea's GitHub README.
+            shot: { image: "https://user-images.githubusercontent.com/79121360/112741096-3d56bd00-8f37-11eb-982d-1866764e642c.png", fit: contain, scale: 0.6 }
       - title: Asset Libraries
         entries:
           - id: godot-asset-store
@@ -149,8 +149,8 @@ sections:
             url: https://www.poliigon.com/free
             tags: [Textures, Free]
             note: Free PBR textures, models & HDRIs
-            # Blocks automated browsers (HTTP 403)
-            shot: { skip: true }
+            # Blocks automated browsers (HTTP 403), so this uses the site's own link-preview image.
+            shot: { image: "https://cdn.poliigon.com/images/poliigon-opengraph.jpg" }
           - id: mixamo
             name: Mixamo
             url: https://www.mixamo.com/
@@ -281,8 +281,8 @@ sections:
             url: https://sonniss.com/gameaudiogdc
             tags: [SFX, Free]
             note: Huge royalty-free yearly bundle
-            # Blocks automated browsers (HTTP 403)
-            shot: { skip: true }
+            # Blocks automated browsers (HTTP 403), so this uses the site's own link-preview image.
+            shot: { image: "https://cdn.sonniss.com/storage/2025/03/Sonniss-Metaimage.png", fit: contain }
           - id: weloveindies
             name: WeLoveIndies
             url: https://www.weloveindies.com/en/welcome/jammers
@@ -317,6 +317,7 @@ sections:
             url: https://www.youtube.com/watch?v=sN2Eiya_koA
             tags: [Video]
             note: Render perfectly smooth footage
+            wide: true
             shot: { image: "https://i.ytimg.com/vi/sN2Eiya_koA/maxresdefault.jpg" }
           - id: davinci-resolve
             name: DaVinci Resolve
@@ -332,7 +333,7 @@ sections:
     title: Marketing & Growth
     emoji: "🍀"
     intro: |
-      Building a great game is only half the battle; you need to make sure people can actually `find` it. Use these tools to optimize your `Steam` presence, research the market, handle `localization`, and even `port` your game to other platforms to make it more accessible. Always use Steam's `Purchasing Power Conversion` to ensure moral and fair pricing globally.
+      Building a great game is only half the battle; you need to make sure people can actually `find` it. Use these tools to optimize your `Steam` presence, research the market, handle `localization`, and even `port` your game to other platforms to make it more accessible. We recommend Steam's `Purchasing Power Conversion` for fair regional pricing around the world.
     groups:
       - title: Steam Page
         entries:
@@ -367,8 +368,8 @@ sections:
             url: https://www.letstrack.games
             tags: [Paid]
             note: Formerly WhoPlays.games. Find creators & track coverage
-            # Blocks automated browsers (HTTP 403)
-            shot: { skip: true }
+            # Blocks automated browsers (HTTP 403), so this uses the site's own link-preview image.
+            shot: { image: "https://www.letstrack.games/cgi/image/Thumbnail-og-image_bfMlBGJF6ABFb2W5fxn7E.png?format=raw" }
       - title: Reach & Publishing
         entries:
           - id: localizedirect

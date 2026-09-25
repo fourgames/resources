@@ -20,8 +20,10 @@ function image(entry, width) {
 }
 
 // Rows of three; a leftover pair shares a row half and half, and a single leftover gets the full width.
+// Entries marked `wide: true` always go last, so they get that full-width spot.
 // (No <table>: GitHub always draws table borders.)
 function rows(entries, columns) {
+  entries = [...entries.filter((e) => !e.wide), ...entries.filter((e) => e.wide)];
   const out = [];
   for (let i = 0; i < entries.length; i += columns) {
     const chunk = entries.slice(i, i + columns);

@@ -29,9 +29,14 @@ const shadow = () =>
     <rect x="${PAD_X}" y="${PAD_TOP + 5}" width="${WIN_W}" height="${WIN_H}" rx="${RADIUS}"
       fill="#000" fill-opacity=".45" filter="url(#s)"/>`);
 
-/** Round the corners of a screenshot (any size, cropped to 16:9) and give it a soft drop shadow. Returns WebP. */
-export async function frame(raw) {
-  const card = await sharp(raw)
+/**
+ * Round the corners of a screenshot (any size) and give it a soft drop shadow. Returns WebP.
+ * fit 'cover' (default) crops to 16:9. 'contain' keeps the whole image (e.g. a logo or wide banner),
+ * scaled by `scale`, centred on the image's own corner colour.
+ */
+export async function frame(raw, { fit = 'cover', scale = 1 } = {}) {
+  const content = fit === 'contain' ? await contain(raw, scale) : raw;
+  const card = await sharp(content)
     .resize(WIN_W, WIN_H, { fit: 'cover', position: 'top', kernel: 'lanczos3' })
     .flatten({ background: '#000' })
     .composite([{ input: mask(), blend: 'dest-in' }, { input: border() }])
@@ -40,6 +45,18 @@ export async function frame(raw) {
 
   const png = await sharp(shadow()).composite([{ input: card, top: PAD_TOP, left: PAD_X }]).png().toBuffer();
   return encode(png);
+}
+
+async function contain(raw, scale) {
+  const { data } = await sharp(raw).flatten({ background: '#000' }).extract({ left: 0, top: 0, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
+  const background = { r: data[0], g: data[1], b: data[2] };
+  const inner = await sharp(raw)
+    .resize(Math.round(WIN_W * 2 * scale), Math.round(WIN_H * 2 * scale), { fit: 'inside', kernel: 'lanczos3' })
+    .toBuffer();
+  return sharp({ create: { width: WIN_W * 2, height: WIN_H * 2, channels: 3, background } })
+    .composite([{ input: inner, gravity: 'centre' }])
+    .png()
+    .toBuffer();
 }
 
 /** Encode to WebP, stepping quality down until it fits the size budget. */

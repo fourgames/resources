@@ -54,7 +54,7 @@ AI won't make your game fun, but it can take the tedious parts off your plate. `
 <p align="center">
   <a href="https://store.steampowered.com/app/431730/Aseprite/"><img width="32%" src=".github/images/shots/aseprite.webp" alt="Aseprite · 2D · Paid · Pixel art editor" title="Aseprite · 2D · Paid · Pixel art editor" /></a>
   <a href="https://store.steampowered.com/app/365670/Blender/"><img width="32%" src=".github/images/shots/blender.webp" alt="Blender · 3D · Open Source" title="Blender · 3D · Open Source" /></a>
-  <a href="https://www.photopea.com/"><img width="32%" src=".github/images/placeholder.webp" alt="Photopea · 2D · Free · Web · Photoshop in the browser" title="Photopea · 2D · Free · Web · Photoshop in the browser" /></a>
+  <a href="https://www.photopea.com/"><img width="32%" src=".github/images/shots/photopea.webp" alt="Photopea · 2D · Free · Web · Photoshop in the browser" title="Photopea · 2D · Free · Web · Photoshop in the browser" /></a>
 </p>
 
 #### Asset Libraries
@@ -80,7 +80,7 @@ AI won't make your game fun, but it can take the tedious parts off your plate. `
 <p align="center">
   <a href="https://lospec.com/palette-list"><img width="32%" src=".github/images/shots/lospec.webp" alt="Lospec · Palettes · Free" title="Lospec · Palettes · Free" /></a>
   <a href="https://www.mixamo.com/"><img width="32%" src=".github/images/shots/mixamo.webp" alt="Mixamo · Animations · Free · Auto-rigging &amp; mocap animations" title="Mixamo · Animations · Free · Auto-rigging &amp; mocap animations" /></a>
-  <a href="https://www.poliigon.com/free"><img width="32%" src=".github/images/placeholder.webp" alt="Poliigon · Textures · Free · Free PBR textures, models &amp; HDRIs" title="Poliigon · Textures · Free · Free PBR textures, models &amp; HDRIs" /></a>
+  <a href="https://www.poliigon.com/free"><img width="32%" src=".github/images/shots/poliigon.webp" alt="Poliigon · Textures · Free · Free PBR textures, models &amp; HDRIs" title="Poliigon · Textures · Free · Free PBR textures, models &amp; HDRIs" /></a>
 </p>
 
 <p align="center">
@@ -155,7 +155,7 @@ Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made font
 </p>
 
 <p align="center">
-  <a href="https://sonniss.com/gameaudiogdc"><img width="32%" src=".github/images/placeholder.webp" alt="Sonniss GDC Bundle · SFX · Free · Huge royalty-free yearly bundle" title="Sonniss GDC Bundle · SFX · Free · Huge royalty-free yearly bundle" /></a>
+  <a href="https://sonniss.com/gameaudiogdc"><img width="32%" src=".github/images/shots/sonniss.webp" alt="Sonniss GDC Bundle · SFX · Free · Huge royalty-free yearly bundle" title="Sonniss GDC Bundle · SFX · Free · Huge royalty-free yearly bundle" /></a>
   <a href="https://www.weloveindies.com/en/welcome/jammers"><img width="32%" src=".github/images/shots/weloveindies.webp" alt="WeLoveIndies · Music · SFX · Free · Free for jams; commercial use needs a license" title="WeLoveIndies · Music · SFX · Free · Free for jams; commercial use needs a license" /></a>
   <a href="https://www.zapsplat.com"><img width="32%" src=".github/images/manual/zapsplat.webp" alt="Zapsplat · SFX · Free · Free with attribution" title="Zapsplat · SFX · Free · Free with attribution" /></a>
 </p>
@@ -167,16 +167,16 @@ High-quality footage is essential for devlogs, trailers, and social media. Use t
 <p align="center">
   <a href="https://www.blender.org/features/video-editing/"><img width="32%" src=".github/images/shots/blender-video.webp" alt="Blender Video Editing · Video · Open Source" title="Blender Video Editing · Video · Open Source" /></a>
   <a href="https://www.blackmagicdesign.com/products/davinciresolve"><img width="32%" src=".github/images/shots/davinci-resolve.webp" alt="DaVinci Resolve · Video · Free" title="DaVinci Resolve · Video · Free" /></a>
-  <a href="https://www.youtube.com/watch?v=sN2Eiya_koA"><img width="32%" src=".github/images/shots/godot-movie-writer.webp" alt="Godot Movie Maker Mode · Video · Render perfectly smooth footage" title="Godot Movie Maker Mode · Video · Render perfectly smooth footage" /></a>
+  <a href="https://store.steampowered.com/app/1905180/OBS_Studio/"><img width="32%" src=".github/images/shots/obs-studio.webp" alt="OBS Studio · Video · Open Source" title="OBS Studio · Video · Open Source" /></a>
 </p>
 
 <p align="center">
-  <a href="https://store.steampowered.com/app/1905180/OBS_Studio/"><img width="100%" src=".github/images/shots/obs-studio.webp" alt="OBS Studio · Video · Open Source" title="OBS Studio · Video · Open Source" /></a>
+  <a href="https://www.youtube.com/watch?v=sN2Eiya_koA"><img width="100%" src=".github/images/shots/godot-movie-writer.webp" alt="Godot Movie Maker Mode · Video · Render perfectly smooth footage" title="Godot Movie Maker Mode · Video · Render perfectly smooth footage" /></a>
 </p>
 
 ## 🍀 Marketing & Growth
 
-Building a great game is only half the battle; you need to make sure people can actually `find` it. Use these tools to optimize your `Steam` presence, research the market, handle `localization`, and even `port` your game to other platforms to make it more accessible. Always use Steam's `Purchasing Power Conversion` to ensure moral and fair pricing globally.
+Building a great game is only half the battle; you need to make sure people can actually `find` it. Use these tools to optimize your `Steam` presence, research the market, handle `localization`, and even `port` your game to other platforms to make it more accessible. We recommend Steam's `Purchasing Power Conversion` for fair regional pricing around the world.
 
 #### Steam Page
 
@@ -189,7 +189,7 @@ Building a great game is only half the battle; you need to make sure people can 
 #### Market Research
 
 <p align="center">
-  <a href="https://www.letstrack.games"><img width="32%" src=".github/images/placeholder.webp" alt="Letstrack · Paid · Formerly WhoPlays.games. Find creators &amp; track coverage" title="Letstrack · Paid · Formerly WhoPlays.games. Find creators &amp; track coverage" /></a>
+  <a href="https://www.letstrack.games"><img width="32%" src=".github/images/shots/letstrack.webp" alt="Letstrack · Paid · Formerly WhoPlays.games. Find creators &amp; track coverage" title="Letstrack · Paid · Formerly WhoPlays.games. Find creators &amp; track coverage" /></a>
   <a href="https://niklasnotes.com"><img width="32%" src=".github/images/shots/niklas-notes.webp" alt="Niklas Notes · What players say in Steam reviews" title="Niklas Notes · What players say in Steam reviews" /></a>
   <a href="https://sullygnome.com"><img width="32%" src=".github/images/manual/sullygnome.webp" alt="SullyGnome · Twitch stats" title="SullyGnome · Twitch stats" /></a>
 </p>

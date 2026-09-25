@@ -27,12 +27,12 @@ contributing, especially via bug reports or pull requests.
 
 If you skip step 2, the daily [Screenshots workflow](.github/workflows/screenshots.yml) captures it for you.
 
-**Sites that block automated browsers** (HTTP 403, "verify you are human"): don't try to get around it.
+**Sites that block automated browsers** (HTTP 403, "verify you are human"): don't try to get around it. Most sites publish a link-preview image (the `og:image` meta tag that Discord and Slack show). Open the page in your browser, copy that image URL and set `shot: { image: "<url>" }`. Add `fit: contain` (and optionally `scale: 0.6`) for logos or very wide banners so nothing gets cropped. If there's no usable image:
 - Take a screenshot of just the page content yourself, roughly 16:9. On a Mac, press Cmd+Shift+4 and drag over the page.
 - Run `npm run add-screenshot -- ~/Desktop/shot.png <id>`.
 - Set `shot: { manual: manual/<id>.webp }` on that entry.
 
-Other per-site options are `waitMs`, `hide` (CSS selectors, e.g. a cookie banner), `css`, `click`, `scrollY`, `scrollTo` (a selector to scroll to, e.g. `"text=/when each genre peaked/i"`), `captureUrl`, `allowRedirect`, `diffThreshold`, `image` (frame a fixed image such as a YouTube thumbnail) and `skip`. The name, tags and note show as a tooltip when you hover over the image. See [`scripts/lib/page.mjs`](scripts/lib/page.mjs).
+Other per-site options are `waitMs`, `hide` (CSS selectors, e.g. a cookie banner), `css`, `click`, `scrollY`, `scrollTo` (a selector to scroll to, e.g. `"text=/when each genre peaked/i"`), `captureUrl`, `allowRedirect`, `diffThreshold`, `image` (frame a fixed image such as a YouTube thumbnail) and `skip`. Put `wide: true` on an entry to give it the full-width spot at the end of its group. The name, tags and note show as a tooltip when you hover over the image. See [`scripts/lib/page.mjs`](scripts/lib/page.mjs).
 
 ## Reporting bugs
 
