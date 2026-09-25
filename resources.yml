@@ -1,0 +1,366 @@
+# Single source of truth for README.md.
+# Add a resource here, then run `npm run build`. Screenshots are captured daily by
+# .github/workflows/screenshots.yml (or locally with `npm run capture -- --only <id>`).
+# Entries are sorted alphabetically inside each group when the README is generated.
+
+defaults:
+  viewport: { width: 1440, height: 900 }
+  waitMs: 1500
+  diffThreshold: 0.05 # share of changed pixels needed before an image is replaced
+  minAgeDays: 14      # never replace an image younger than this
+  columns: 3
+  thumbWidth: 240
+
+tags:
+  - 2D
+  - 3D
+  - Animations
+  - Art
+  - Fonts
+  - Free
+  - Icons
+  - LLM
+  - MCP
+  - Music
+  - Open Source
+  - Paid
+  - Palettes
+  - Pixel Fonts
+  - SFX
+  - Textures
+  - Video
+  - Web
+
+sections:
+  - id: engine
+    title: Game Engine & Template
+    emoji: "🧩"
+    intro: |
+      `Godot Engine`: Your free, open‑source game engine. Develop your 2D & 3D games, cross-platform projects, or even XR ideas!
+      Paired with the `Four Games Template`, you get a project template with ongoing video tutorial support. Focused on architecture and automation with Controller-First design.
+    groups:
+      - entries:
+          - id: godot-engine
+            name: Godot Engine
+            url: https://store.steampowered.com/app/404790/Godot_Engine/
+            tags: [2D, 3D, Open Source]
+          - id: four-games-template
+            name: Four Games Template
+            url: https://github.com/fourgames/template
+            tags: [Open Source]
+            note: Controller-first Godot template
+
+  - id: ai
+    title: AI Assistants
+    emoji: "🤖"
+    intro: |
+      AI won't make your game fun, but it can take the tedious parts off your plate. `godot-ai` lets Claude read and edit your open Godot project directly: scenes, nodes, scripts and more.
+    groups:
+      - entries:
+          - id: godot-ai
+            name: godot-ai
+            url: https://github.com/hi-godot/godot-ai
+            tags: [MCP, Open Source]
+            note: Let Claude drive the Godot editor
+          - id: claude-opus
+            name: Claude Opus 5.5
+            url: https://www.anthropic.com/claude-opus-5-5
+            tags: [LLM]
+            note: Just starting out? Use medium effort
+
+  - id: art
+    title: Visuals & Art
+    emoji: "🎨"
+    intro: |
+      "Art stops the scroll." Use these tools to create your visuals, find assets, and palettes. Also, watch the interview with the creator of `Tinyfolks` on how he created a successful `Steam` game without "art skills" by keeping things simple.
+    groups:
+      - title: Tools
+        entries:
+          - id: blender
+            name: Blender
+            url: https://store.steampowered.com/app/365670/Blender/
+            tags: [3D, Open Source]
+          - id: aseprite
+            name: Aseprite
+            url: https://store.steampowered.com/app/431730/Aseprite/
+            tags: [2D, Paid]
+            note: Pixel art editor
+          - id: photopea
+            name: Photopea
+            url: https://www.photopea.com/
+            tags: [2D, Web]
+            note: Photoshop in the browser
+            # Blocks automated browsers (HTTP 403)
+            shot: { skip: true }
+      - title: Asset Libraries
+        entries:
+          - id: godot-asset-store
+            name: Godot Asset Store
+            url: https://store.godotengine.org
+            tags: [2D, 3D]
+          - id: fab
+            name: Fab
+            url: https://www.fab.com
+            tags: [2D, 3D]
+            # Blocks automated browsers (HTTP 403)
+            shot: { manual: manual/fab.webp }
+          - id: kenney
+            name: Kenney
+            url: https://www.kenney.nl/assets
+            tags: [2D, 3D, Free]
+          - id: poly-pizza
+            name: Poly Pizza
+            url: https://poly.pizza/
+            tags: [3D, Free]
+          - id: opengameart
+            name: OpenGameArt
+            url: https://opengameart.org/
+            tags: [2D, 3D, Free]
+          - id: craftpix
+            name: CraftPix
+            url: https://craftpix.net/freebies/
+            tags: [2D, 3D, Free]
+          - id: itch-free-assets
+            name: itch.io Free Assets
+            url: https://itch.io/game-assets/free
+            tags: [2D, 3D, Music, SFX, Free]
+      - title: Textures, Animations & Palettes
+        entries:
+          - id: textures-com
+            name: Textures.com
+            url: https://www.textures.com/
+            tags: [Textures]
+            shot: { waitMs: 6000 }
+          - id: poliigon
+            name: Poliigon
+            url: https://www.poliigon.com/search?credit=0
+            tags: [Textures, Free]
+            note: Filtered to free textures
+            # Blocks automated browsers (HTTP 403)
+            shot: { skip: true }
+          - id: mixamo
+            name: Mixamo
+            url: https://www.mixamo.com/
+            tags: [Animations, Free]
+            note: Auto-rigging & mocap animations
+            shot: { allowRedirect: true }
+          - id: lospec
+            name: Lospec
+            url: https://lospec.com/palette-list
+            tags: [Palettes]
+      - title: Watch
+        entries:
+          - id: tinyfolks-interview
+            name: Making a Steam hit without "art skills" (Tinyfolks)
+            url: https://youtu.be/rsoUzF3RdsU?si=WE67ZP_uEQoh4Nwf&t=1140
+            tags: [Video]
+            featured: true
+            shot: { image: "https://i.ytimg.com/vi/rsoUzF3RdsU/maxresdefault.jpg" }
+
+  - id: fonts-icons
+    title: Fonts & Icons
+    emoji: "🔤"
+    intro: |
+      Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made fonts and icons here, or make your own pixel font.
+    groups:
+      - title: Fonts
+        entries:
+          - id: google-fonts
+            name: Google Fonts
+            url: https://fonts.google.com
+            tags: [Fonts, Free]
+            shot: { hide: [gf-notifications] }
+          - id: fontsource
+            name: Fontsource
+            url: https://github.com/fontsource/fontsource
+            tags: [Fonts, Open Source]
+          - id: font-squirrel
+            name: Font Squirrel
+            url: https://www.fontsquirrel.com/
+            tags: [Fonts, Free]
+          - id: bitfontmaker2
+            name: BitFontMaker2
+            url: http://www.pentacom.jp/pentacom/bitfontmaker2/
+            tags: [Pixel Fonts, Web]
+            note: Draw your own pixel font
+      - title: Icons
+        entries:
+          - id: game-icons
+            name: Game-Icons
+            url: https://game-icons.net
+            tags: [Icons, Free]
+          - id: font-awesome
+            name: Font Awesome
+            url: https://fontawesome.com/icons
+            tags: [Icons]
+          - id: google-icons
+            name: Google Icons
+            url: https://fonts.google.com/icons
+            tags: [Icons, Free]
+            shot: { hide: [gf-notifications] }
+
+  - id: audio
+    title: Audio & Sound Design
+    emoji: "🔊"
+    intro: |
+      "People will watch a blurry video, but they won't watch one with bad audio." Sound is what truly elevates a project to the next level. Use these tools to `compose` your own tracks or use these resources for `ready-made` audio to ensure your game feels as good as it looks.
+    groups:
+      - title: DAWs
+        entries:
+          - id: reaper
+            name: Reaper
+            url: https://www.reaper.fm
+            tags: [Music, SFX]
+          - id: fl-studio
+            name: FL Studio
+            url: https://www.image-line.com
+            tags: [Music, Paid]
+      - title: Generators & Trackers
+        entries:
+          - id: sfxr
+            name: sfxr
+            url: https://sfxr.me
+            tags: [SFX, Web]
+            links:
+              - { label: desktop original, url: "https://www.drpetter.se/project_sfxr.html" }
+          - id: chiptone
+            name: Chiptone
+            url: https://sfbgames.itch.io/chiptone
+            tags: [SFX, Free]
+          - id: bosca-ceoil-blue
+            name: Bosca Ceoil Blue
+            url: https://yurisizov.itch.io/boscaceoil-blue
+            tags: [Music, Open Source]
+            note: Remake of the classic Bosca Ceoil
+          - id: beepbox
+            name: BeepBox
+            url: https://www.beepbox.co/
+            tags: [Music, Web]
+      - title: Libraries
+        entries:
+          - id: freesound
+            name: Freesound
+            url: https://freesound.org
+            tags: [SFX, Free]
+            shot: { hide: [.toast] }
+          - id: zapsplat
+            name: Zapsplat
+            url: https://www.zapsplat.com
+            tags: [SFX]
+            # Blocks automated browsers (HTTP 403)
+            shot: { manual: manual/zapsplat.webp }
+          - id: free-music-archive
+            name: Free Music Archive
+            url: https://freemusicarchive.org/
+            tags: [Music, Free]
+            note: Check each track's license
+          - id: opengameart-audio
+            name: OpenGameArt Audio
+            url: https://opengameart.org/art-search-advanced?field_art_type_tid%5B%5D=12&field_art_type_tid%5B%5D=13
+            tags: [Music, SFX, Free]
+          - id: kenney-audio
+            name: Kenney Audio
+            url: https://kenney.nl/assets/category:Audio
+            tags: [Music, SFX, Free]
+          - id: sonniss
+            name: Sonniss GDC Bundle
+            url: https://sonniss.com/gameaudiogdc
+            tags: [SFX, Free]
+            note: Huge royalty-free yearly bundle
+            # Blocks automated browsers (HTTP 403)
+            shot: { skip: true }
+          - id: weloveindies
+            name: WeLoveIndies
+            url: https://www.weloveindies.com/en/welcome/jammers
+            tags: [Music, SFX, Free]
+            note: Free for game jams
+            shot: { hide: [.wli-dsgvo] }
+          - id: epidemic-sound
+            name: Epidemic Sound
+            url: https://www.epidemicsound.com
+            tags: [Music, SFX, Paid]
+            note: Subscription, great for trailers
+            shot: { hide: ['[class*="2147483647"]', '[class*="2147483646"]'] }
+
+  - id: video
+    title: Capturing Video & Editing
+    emoji: "📼"
+    intro: |
+      High-quality footage is essential for devlogs, trailers, and social media. Use these tools to `record` your gameplay and `edit` your clips into a professional showcase.
+    groups:
+      - entries:
+          - id: obs-studio
+            name: OBS Studio
+            url: https://store.steampowered.com/app/1905180/OBS_Studio/
+            tags: [Video, Open Source]
+          - id: godot-movie-writer
+            name: Godot Movie Maker Mode
+            url: https://www.youtube.com/watch?v=sN2Eiya_koA
+            tags: [Video]
+            note: Render perfectly smooth footage
+            shot: { image: "https://i.ytimg.com/vi/sN2Eiya_koA/maxresdefault.jpg" }
+          - id: davinci-resolve
+            name: DaVinci Resolve
+            url: https://www.blackmagicdesign.com/products/davinciresolve
+            tags: [Video, Free]
+          - id: blender-video
+            name: Blender Video Editing
+            url: https://www.blender.org/features/video-editing/
+            tags: [Video, Open Source]
+
+  - id: marketing
+    title: Marketing & Growth
+    emoji: "🍀"
+    intro: |
+      Building a great game is only half the battle; you need to make sure people can actually `find` it. Use these tools to optimize your `Steam` presence, research the market, handle `localization`, and even `port` your game to other platforms to make it more accessible. Always use Steam's `Purchasing Power Conversion` to ensure moral and fair pricing globally.
+    groups:
+      - title: Steam Page
+        entries:
+          - id: steamcapsule
+            name: Steam Capsule
+            url: https://www.steamcapsule.com/artists
+            tags: [Art]
+            note: Hire capsule artists
+          - id: steam-tag-helper
+            name: Steam Tag Helper
+            url: https://steamtaghelper.com
+            tags: [Free]
+          - id: steam-pricing
+            name: Steam Pricing Explorer
+            url: https://partner.steamgames.com/pricing/explorer
+            tags: [Free]
+      - title: Market Research
+        entries:
+          - id: niklas-notes
+            name: Niklas Notes
+            url: https://niklasnotes.com
+            note: What players say in Steam reviews
+          - id: sullygnome
+            name: SullyGnome
+            url: https://sullygnome.com
+            note: Twitch stats
+            # Blocks automated browsers (HTTP 403)
+            shot: { manual: manual/sullygnome.webp }
+          - id: whoplays-games
+            name: WhoPlays.games
+            url: https://whoplays.games
+            # Blocks automated browsers (HTTP 403)
+            shot: { manual: manual/whoplays-games.webp }
+      - title: Reach & Publishing
+        entries:
+          - id: localizedirect
+            name: LocalizeDirect
+            url: https://www.localizedirect.com
+            note: Localization
+          - id: steamy-discord-bot
+            name: Steamy Discord Bot
+            url: https://www.codecks.io/steam-bot/
+            tags: [Free]
+          - id: w4-consoles
+            name: W4 Consoles
+            url: https://www.w4games.com/w4consoles
+            note: Port Godot games to consoles
+          - id: future-friends
+            name: Future Friends Games
+            url: https://futurefriends.lol
+            note: Publishing & self-publishing support

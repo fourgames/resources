@@ -1,0 +1,21 @@
+{
+  "name": "fourgames-resources",
+  "private": true,
+  "type": "module",
+  "description": "Data-driven README with automated website screenshots",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "capture": "node scripts/capture.mjs",
+    "build": "node scripts/build-readme.mjs",
+    "check": "node scripts/build-readme.mjs --check",
+    "update": "npm run capture && npm run build",
+    "add-screenshot": "node scripts/add-screenshot.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.63.0",
+    "sharp": "0.35.4",
+    "yaml": "2.9.1"
+  }
+}
