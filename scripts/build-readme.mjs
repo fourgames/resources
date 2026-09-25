@@ -28,8 +28,9 @@ function table(entries, { columns, thumbWidth }) {
   const regular = entries.filter((e) => !e.featured);
   for (let i = 0; i < regular.length; i += columns) {
     const chunk = regular.slice(i, i + columns);
-    const cells = chunk.map((e) => `<td align="center" valign="top" width="${Math.floor(100 / columns)}%">\n${cell(e, thumbWidth)}\n</td>`);
-    while (cells.length < columns) cells.push(`<td width="${Math.floor(100 / columns)}%"></td>`);
+    // No width on <td>: GitHub renders tables at max-content, and percentage widths shrink the images.
+    const cells = chunk.map((e) => `<td align="center" valign="top">\n${cell(e, thumbWidth)}\n</td>`);
+    while (cells.length < columns) cells.push('<td></td>');
     rows.push(`<tr>\n${cells.join('\n')}\n</tr>`);
   }
   for (const e of entries.filter((e) => e.featured)) {
