@@ -2,9 +2,9 @@ name: Check
 
 on:
   push:
-    paths: ["resources.yml", "README*", "scripts/**", ".github/images/**", "package*.json", ".nvmrc", ".github/workflows/check.yml"]
+    paths: ["resources.yml", "README*", "scripts/**", "package*.json", ".nvmrc", ".github/workflows/check.yml"]
   pull_request:
-    paths: ["resources.yml", "README*", "scripts/**", ".github/images/**", "package*.json", ".nvmrc", ".github/workflows/check.yml"]
+    paths: ["resources.yml", "README*", "scripts/**", "package*.json", ".nvmrc", ".github/workflows/check.yml"]
 
 permissions:
   contents: read
@@ -20,4 +20,5 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
+      - run: npm run images
       - run: npm run check

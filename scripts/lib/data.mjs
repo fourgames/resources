@@ -4,7 +4,10 @@ import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
 
 export const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
-export const IMAGES_DIR = join(ROOT, '.github', 'images');
+// Local mirror of the `screenshots` branch (see scripts/images.mjs). Gitignored on main.
+export const IMAGES_DIR = join(ROOT, 'images');
+// Where GitHub serves that branch's files; the README points its images here.
+export const IMAGES_URL = 'https://github.com/fourgames/resources/raw/screenshots';
 export const SHOTS_DIR = join(IMAGES_DIR, 'shots');
 export const PLACEHOLDER = 'placeholder.webp';
 
@@ -46,7 +49,7 @@ export function loadData(file = join(ROOT, 'resources.yml')) {
         for (const t of e.tags ?? []) if (!knownTags.has(t)) errors.push(`${where}: unknown tag "${t}"`);
         const shot = e.shot ?? {};
         if (shot.manual && !existsSync(join(IMAGES_DIR, shot.manual)))
-          errors.push(`${where}: manual image not found: .github/images/${shot.manual}`);
+          errors.push(`${where}: manual image not found: images/${shot.manual} (run \`npm run images\` first?)`);
         const entry = { ...e, id, tags: e.tags ?? [], shot, section: section.id };
         entries.push(entry);
         return entry;
@@ -64,7 +67,7 @@ export function loadData(file = join(ROOT, 'resources.yml')) {
   return { defaults, sections, entries };
 }
 
-/** Path of the image (relative to .github/images) the README should show for an entry. */
+/** Path of the image (relative to images/) the README should show for an entry. */
 export function imageFor(entry) {
   if (entry.shot.manual) return entry.shot.manual;
   const rel = `shots/${entry.id}.webp`;

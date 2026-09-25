@@ -2,7 +2,7 @@
 // Usage: node scripts/build-readme.mjs [--check]   (--check fails if README.md is out of date)
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { loadData, imageFor, ROOT, SHOTS_DIR } from './lib/data.mjs';
+import { loadData, imageFor, ROOT, SHOTS_DIR, IMAGES_DIR, IMAGES_URL } from './lib/data.mjs';
 
 const check = process.argv.includes('--check');
 const README = join(ROOT, 'README.md');
@@ -16,7 +16,7 @@ const tooltip = (e) => [e.name, e.tags.join(' · '), e.note].filter(Boolean).joi
 
 function image(entry, width) {
   const title = esc(tooltip(entry));
-  return `  <a href="${esc(entry.url)}"><img width="${width}" src=".github/images/${imageFor(entry)}" alt="${title}" title="${title}" /></a>`;
+  return `  <a href="${esc(entry.url)}"><img width="${width}" src="${IMAGES_URL}/${imageFor(entry)}" alt="${title}" title="${title}" /></a>`;
 }
 
 // Rows of three; a leftover pair shares a row half and half, and a single leftover gets the full width.
@@ -55,13 +55,21 @@ function render() {
   }
   const template = readFileSync(join(ROOT, 'README.template.md'), 'utf8');
   if (!template.includes(MARKER)) throw new Error(`README.template.md is missing ${MARKER}`);
-  return { readme: HEADER + template.replace(MARKER, out.join('\n\n').trim()), entries };
+  const body = template.replace(MARKER, out.join('\n\n').trim()).replaceAll('{{IMAGES_URL}}', IMAGES_URL);
+  return { readme: HEADER + body, entries };
 }
 
 const { readme, entries } = render();
 
-// Every image the README points at must exist.
-const missing = [...readme.matchAll(/src="(\.github\/images\/[^"]+)"/g)].map((m) => m[1]).filter((p) => !existsSync(join(ROOT, p)));
+// Every image the README points at must exist on the screenshots branch (mirrored in images/).
+if (!existsSync(IMAGES_DIR)) {
+  console.error('images/ is missing. Run `npm run images` to fetch the screenshots branch.');
+  process.exit(1);
+}
+const prefix = `${IMAGES_URL}/`;
+const missing = [...readme.matchAll(/src="([^"]+)"/g)]
+  .map((m) => m[1])
+  .filter((src) => src.startsWith(prefix) && !existsSync(join(IMAGES_DIR, src.slice(prefix.length))));
 if (missing.length) {
   console.error(`README references missing images:\n  ${missing.join('\n  ')}`);
   process.exit(1);

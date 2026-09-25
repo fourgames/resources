@@ -13,8 +13,8 @@ success = (core * polish) * (genre * trend) * (art * social)
 - `Art` stops the scroll. `Social` is the strongest multiplier: Local Co-op is `realistic` and Online is high-reward but significantly more `difficult`.
 
 <p align="center">
-  <a href="https://youtu.be/xej_wsBB5tY"><img width="49%" alt="Jonas Tyroller: Just make great games. Make the right games." title="Jonas Tyroller: Just make great games. Make the right games." src=".github/images/shots/jonas-tyroller.webp" /></a>
-  <a href="https://weloveit.io/developers/steam-revenue-report/"><img width="49%" alt="When each genre peaked on Steam (Steam revenue report)" title="When each genre peaked on Steam (Steam revenue report)" src=".github/images/shots/genre-peaks.webp" /></a>
+  <a href="https://youtu.be/xej_wsBB5tY"><img width="49%" alt="Jonas Tyroller: Just make great games. Make the right games." title="Jonas Tyroller: Just make great games. Make the right games." src="{{IMAGES_URL}}/shots/jonas-tyroller.webp" /></a>
+  <a href="https://weloveit.io/developers/steam-revenue-report/"><img width="49%" alt="When each genre peaked on Steam (Steam revenue report)" title="When each genre peaked on Steam (Steam revenue report)" src="{{IMAGES_URL}}/shots/genre-peaks.webp" /></a>
 </p>
 
 > [!IMPORTANT]

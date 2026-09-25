@@ -7,6 +7,8 @@
     "node": ">=22"
   },
   "scripts": {
+    "images": "node scripts/images.mjs pull",
+    "images:push": "node scripts/images.mjs push",
     "capture": "node scripts/capture.mjs",
     "build": "node scripts/build-readme.mjs",
     "check": "node scripts/build-readme.mjs --check",

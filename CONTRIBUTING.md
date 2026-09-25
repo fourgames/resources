@@ -22,15 +22,19 @@ contributing, especially via bug reports or pull requests.
      tags: [2D, 3D, Free]  # must be listed under `tags:` at the top
      note: Short one-liner # optional
    ```
-2. Run `npm ci`, then `npm run capture -- --only kenney` to take the screenshot (needs `npx playwright install chromium` once).
-3. Run `npm run build` to regenerate `README.md`, then commit everything.
+2. Run `npm run build` to regenerate `README.md`, then commit `resources.yml` and `README.md`.
 
-If you skip step 2, the daily [Screenshots workflow](.github/workflows/screenshots.yml) captures it for you.
+The daily [Screenshots workflow](.github/workflows/screenshots.yml) captures the screenshot for you (or start it by hand from the Actions tab).
+
+**Where the images live:** screenshots aren't on `main`. They're on the `screenshots` branch, which the workflow replaces with a single fresh commit on every run, so images never pile up in git history and clones stay tiny. To work on images locally:
+- Run `npm ci`, then `npm run images` to download the branch into `images/` (gitignored). `npm run build` needs it.
+- Run `npm run capture -- --only kenney` to take a screenshot (run `npx playwright install chromium` once first).
+- Run `npm run images:push` to publish `images/` as the new single commit on the branch.
 
 **Sites that block automated browsers** (HTTP 403, "verify you are human"): don't try to get around it. Most sites publish a link-preview image (the `og:image` meta tag that Discord and Slack show). Open the page in your browser, copy that image URL and set `shot: { image: "<url>" }`. Add `fit: contain` (and optionally `scale: 0.6`) for logos or very wide banners so nothing gets cropped. If there's no usable image:
 - Take a screenshot of just the page content yourself, roughly 16:9. On a Mac, press Cmd+Shift+4 and drag over the page.
 - Run `npm run add-screenshot -- ~/Desktop/shot.png <id>`.
-- Set `shot: { manual: manual/<id>.webp }` on that entry.
+- Set `shot: { manual: manual/<id>.webp }` on that entry, then run `npm run images:push` and `npm run build`.
 
 Other per-site options are `waitMs`, `hide` (CSS selectors, e.g. a cookie banner), `css`, `click`, `scrollY`, `scrollTo` (a selector to scroll to, e.g. `"text=/when each genre peaked/i"`), `captureUrl`, `allowRedirect`, `diffThreshold`, `image` (frame a fixed image such as a YouTube thumbnail) and `skip`. Put `wide: true` on an entry to give it the full-width spot at the end of its group. The name, tags and note show as a tooltip when you hover over the image. See [`scripts/lib/page.mjs`](scripts/lib/page.mjs).
 
