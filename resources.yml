@@ -110,6 +110,7 @@ sections:
             name: Godot Asset Store
             url: https://store.godotengine.org
             tags: [2D, 3D]
+            wide: true
           - id: fab
             name: Fab
             url: https://www.fab.com

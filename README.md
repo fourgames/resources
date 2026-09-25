@@ -62,17 +62,17 @@ AI won't make your game fun, but it can take the tedious parts off your plate. `
 <p align="center">
   <a href="https://craftpix.net/freebies/"><img width="32%" src=".github/images/shots/craftpix.webp" alt="CraftPix · 2D · 3D · Free" title="CraftPix · 2D · 3D · Free" /></a>
   <a href="https://www.fab.com"><img width="32%" src=".github/images/manual/fab.webp" alt="Fab · 2D · 3D · Free · Paid" title="Fab · 2D · 3D · Free · Paid" /></a>
-  <a href="https://store.godotengine.org"><img width="32%" src=".github/images/shots/godot-asset-store.webp" alt="Godot Asset Store · 2D · 3D" title="Godot Asset Store · 2D · 3D" /></a>
+  <a href="https://itch.io/game-assets/free"><img width="32%" src=".github/images/shots/itch-free-assets.webp" alt="itch.io Free Assets · 2D · 3D · Free" title="itch.io Free Assets · 2D · 3D · Free" /></a>
 </p>
 
 <p align="center">
-  <a href="https://itch.io/game-assets/free"><img width="32%" src=".github/images/shots/itch-free-assets.webp" alt="itch.io Free Assets · 2D · 3D · Free" title="itch.io Free Assets · 2D · 3D · Free" /></a>
   <a href="https://kenney.nl/assets"><img width="32%" src=".github/images/shots/kenney.webp" alt="Kenney · 2D · 3D · Free" title="Kenney · 2D · 3D · Free" /></a>
   <a href="https://opengameart.org/"><img width="32%" src=".github/images/shots/opengameart.webp" alt="OpenGameArt · 2D · 3D · Free" title="OpenGameArt · 2D · 3D · Free" /></a>
+  <a href="https://poly.pizza/"><img width="32%" src=".github/images/shots/poly-pizza.webp" alt="Poly Pizza · 3D · Free" title="Poly Pizza · 3D · Free" /></a>
 </p>
 
 <p align="center">
-  <a href="https://poly.pizza/"><img width="100%" src=".github/images/shots/poly-pizza.webp" alt="Poly Pizza · 3D · Free" title="Poly Pizza · 3D · Free" /></a>
+  <a href="https://store.godotengine.org"><img width="100%" src=".github/images/shots/godot-asset-store.webp" alt="Godot Asset Store · 2D · 3D" title="Godot Asset Store · 2D · 3D" /></a>
 </p>
 
 #### Textures, Animations & Palettes
