@@ -38,7 +38,7 @@ Paired with the `Four Games Template`, you get a project template with ongoing v
 
 ## 🤖 AI Assistants
 
-AI won't make your game fun, but it can take the tedious parts off your plate. `godot-ai` lets Claude read and edit your open Godot project directly: scenes, nodes, scripts and more.
+AI makes game development accessible to more people. For me personally, it raises the quality of my work while saving time, but good results still take constant iteration and playtesting. `godot-ai` lets Claude read and edit your open Godot project directly: scenes, nodes, scripts and more. I wouldn't recommend it for art unless you have a good eye for quality; use ready-made assets instead.
 
 <p align="center">
   <a href="https://www.anthropic.com"><img width="49%" src=".github/images/shots/claude.webp" alt="Claude · LLM" title="Claude · LLM" /></a>
