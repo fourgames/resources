@@ -46,7 +46,7 @@ async function processEntry(browser, entry) {
   if (!result.ok) return Object.assign(row, { status: 'failed', reason: result.reason });
 
   writeFileSync(join(CACHE, 'raw', `${entry.id}.png`), result.png);
-  const next = await frame(result.png, { fit: entry.shot.fit });
+  const next = await frame(result.png);
   const file = join(SHOTS_DIR, `${entry.id}.webp`);
   const meta = manifest[entry.id];
   row.kb = (next.length / 1024).toFixed(0);

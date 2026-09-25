@@ -23,6 +23,15 @@ export function loadData(file = join(ROOT, 'resources.yml')) {
   const urls = new Set();
   const entries = [];
 
+  // Extras are captured like any entry but not listed in the grid (e.g. images used in the README intro).
+  const extras = (raw.extras ?? []).map((e) => ({ ...e, id: e.id ?? slug(e.name ?? ''), tags: [], shot: e.shot ?? {}, extra: true }));
+  for (const e of extras) {
+    if (!e.name || !e.url) errors.push(`extras › ${e.name ?? '?'}: name and url are required`);
+    if (ids.has(e.id)) errors.push(`extras › ${e.name}: duplicate id "${e.id}"`);
+    ids.add(e.id);
+    entries.push(e);
+  }
+
   const sections = (raw.sections ?? []).map((section) => {
     if (!section.id || !section.title) errors.push(`section missing id/title: ${JSON.stringify(section)}`);
     const groups = (section.groups ?? []).map((group) => {
@@ -38,7 +47,7 @@ export function loadData(file = join(ROOT, 'resources.yml')) {
         const shot = e.shot ?? {};
         if (shot.manual && !existsSync(join(IMAGES_DIR, shot.manual)))
           errors.push(`${where}: manual image not found: .github/images/${shot.manual}`);
-        const entry = { ...e, id, tags: e.tags ?? [], links: e.links ?? [], shot, section: section.id };
+        const entry = { ...e, id, tags: e.tags ?? [], shot, section: section.id };
         entries.push(entry);
         return entry;
       });

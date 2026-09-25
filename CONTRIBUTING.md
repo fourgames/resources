@@ -28,11 +28,11 @@ contributing, especially via bug reports or pull requests.
 If you skip step 2, the daily [Screenshots workflow](.github/workflows/screenshots.yml) captures it for you.
 
 **Sites that block automated browsers** (HTTP 403, "verify you are human"): don't try to get around it.
-- Take a normal screenshot yourself. On a Mac, press Cmd+Shift+4, then Space, and click the browser window.
+- Take a screenshot of just the page content yourself, roughly 16:9. On a Mac, press Cmd+Shift+4 and drag over the page.
 - Run `npm run add-screenshot -- ~/Desktop/shot.png <id>`.
 - Set `shot: { manual: manual/<id>.webp }` on that entry.
 
-Other per-site options are `waitMs`, `hide` (CSS selectors, e.g. a cookie banner), `css`, `click`, `scrollY`, `captureUrl`, `allowRedirect`, `diffThreshold`, `image` (frame a fixed image such as a YouTube thumbnail) and `skip`. See [`scripts/lib/page.mjs`](scripts/lib/page.mjs).
+Other per-site options are `waitMs`, `hide` (CSS selectors, e.g. a cookie banner), `css`, `click`, `scrollY`, `scrollTo` (a selector to scroll to, e.g. `"text=/when each genre peaked/i"`), `captureUrl`, `allowRedirect`, `diffThreshold`, `image` (frame a fixed image such as a YouTube thumbnail) and `skip`. The name, tags and note show as a tooltip when you hover over the image. See [`scripts/lib/page.mjs`](scripts/lib/page.mjs).
 
 ## Reporting bugs
 

@@ -11,32 +11,24 @@ const HEADER = '<!-- Generated from resources.yml and README.template.md by `npm
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-function cell(entry, width) {
-  const href = esc(entry.url);
-  const lines = [
-    `<a href="${href}"><img src=".github/images/${imageFor(entry)}" width="${width}" alt="${esc(entry.name)}"></a><br>`,
-    `<a href="${href}"><b>${esc(entry.name)}</b></a>`,
-  ];
-  if (entry.tags.length) lines.push(`<br><sub>${entry.tags.map(esc).join(' · ')}</sub>`);
-  if (entry.note) lines.push(`<br><sub><i>${esc(entry.note)}</i></sub>`);
-  for (const link of entry.links) lines.push(`<br><sub><a href="${esc(link.url)}">${esc(link.label)}</a></sub>`);
-  return lines.join('\n');
+// Hover text: name, tags and note (GitHub shows it as a tooltip; screen readers get the alt text).
+const tooltip = (e) => [e.name, e.tags.join(' · '), e.note].filter(Boolean).join(' · ');
+
+function image(entry, width) {
+  const title = esc(tooltip(entry));
+  return `  <a href="${esc(entry.url)}"><img width="${width}" src=".github/images/${imageFor(entry)}" alt="${title}" title="${title}" /></a>`;
 }
 
-function table(entries, { columns, thumbWidth }) {
-  const rows = [];
-  const regular = entries.filter((e) => !e.featured);
-  for (let i = 0; i < regular.length; i += columns) {
-    const chunk = regular.slice(i, i + columns);
-    // No width on <td>: GitHub renders tables at max-content, and percentage widths shrink the images.
-    const cells = chunk.map((e) => `<td align="center" valign="top">\n${cell(e, thumbWidth)}\n</td>`);
-    while (cells.length < columns) cells.push('<td></td>');
-    rows.push(`<tr>\n${cells.join('\n')}\n</tr>`);
+// Rows of three; a leftover pair shares a row half and half, and a single leftover gets the full width.
+// (No <table>: GitHub always draws table borders.)
+function rows(entries, columns) {
+  const out = [];
+  for (let i = 0; i < entries.length; i += columns) {
+    const chunk = entries.slice(i, i + columns);
+    const width = chunk.length === 1 ? '100%' : chunk.length === 2 ? '49%' : `${Math.floor(100 / chunk.length) - 1}%`;
+    out.push(`<p align="center">\n${chunk.map((e) => image(e, width)).join('\n')}\n</p>`);
   }
-  for (const e of entries.filter((e) => e.featured)) {
-    rows.push(`<tr>\n<td align="center" colspan="${columns}">\n${cell(e, thumbWidth * 2)}\n</td>\n</tr>`);
-  }
-  return `<table>\n${rows.join('\n')}\n</table>`;
+  return out.join('\n\n');
 }
 
 function render() {
@@ -48,7 +40,7 @@ function render() {
     process.exit(1);
   }
   const { defaults, sections, entries } = data;
-  const opts = { columns: defaults.columns ?? 3, thumbWidth: defaults.thumbWidth ?? 240 };
+  const columns = defaults.columns ?? 3;
   const out = [];
   for (const section of sections) {
     out.push(`## ${section.emoji ? `${section.emoji} ` : ''}${section.title}`);
@@ -56,7 +48,7 @@ function render() {
     if (section.callout) out.push(`> [!${section.callout.type}]\n> ${section.callout.text.trim().replace(/\n/g, '\n> ')}`);
     for (const group of section.groups) {
       if (group.title) out.push(`#### ${group.title}`);
-      out.push(table(group.entries, opts));
+      out.push(rows(group.entries, columns));
     }
   }
   const template = readFileSync(join(ROOT, 'README.template.md'), 'utf8');
@@ -90,5 +82,5 @@ if (check) {
   console.log('README.md is up to date.');
 } else {
   writeFileSync(README, readme);
-  console.log(`Wrote README.md (${entries.length} resources).`);
+  console.log(`Wrote README.md (${entries.filter((e) => !e.extra).length} resources).`);
 }

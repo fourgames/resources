@@ -4,12 +4,11 @@
 # Entries are sorted alphabetically inside each group when the README is generated.
 
 defaults:
-  viewport: { width: 1440, height: 900 }
+  viewport: { width: 1440, height: 810 } # 16:9
   waitMs: 1500
   diffThreshold: 0.05 # share of changed pixels needed before an image is replaced
   minAgeDays: 14      # never replace an image younger than this
   columns: 3
-  thumbWidth: 240
 
 tags:
   - 2D
@@ -30,6 +29,17 @@ tags:
   - Textures
   - Video
   - Web
+
+# Captured like any resource, but used by README.template.md instead of the grid.
+extras:
+  - id: jonas-tyroller
+    name: "Jonas Tyroller: Just make great games"
+    url: https://youtu.be/xej_wsBB5tY
+    shot: { image: "https://i.ytimg.com/vi/xej_wsBB5tY/maxresdefault.jpg" }
+  - id: genre-peaks
+    name: When each genre peaked (Steam revenue report)
+    url: https://weloveit.io/developers/steam-revenue-report/
+    shot: { scrollTo: "text=/when each genre peaked/i", scrollOffset: 12, hide: [nav.sticky-top], waitMs: 3000 }
 
 sections:
   - id: engine
@@ -63,11 +73,10 @@ sections:
             url: https://github.com/hi-godot/godot-ai
             tags: [MCP, Open Source]
             note: Let Claude drive the Godot editor
-          - id: claude-opus
-            name: Claude Opus 5.5
-            url: https://www.anthropic.com/claude-opus-5-5
+          - id: claude
+            name: Claude
+            url: https://www.anthropic.com
             tags: [LLM]
-            note: Just starting out? Use medium effort
 
   - id: art
     title: Visuals & Art
@@ -158,8 +167,7 @@ sections:
             name: Making a Steam hit without "art skills" (Tinyfolks)
             url: https://youtu.be/rsoUzF3RdsU?si=WE67ZP_uEQoh4Nwf&t=1140
             tags: [Video]
-            featured: true
-            shot: { image: "https://i.ytimg.com/vi/rsoUzF3RdsU/maxresdefault.jpg", fit: contain }
+            shot: { image: "https://i.ytimg.com/vi/rsoUzF3RdsU/maxresdefault.jpg" }
 
   - id: fonts-icons
     title: Fonts & Icons
@@ -226,8 +234,7 @@ sections:
             name: sfxr
             url: https://sfxr.me
             tags: [SFX, Web]
-            links:
-              - { label: desktop original, url: "https://www.drpetter.se/project_sfxr.html" }
+            note: Browser version of DrPetter's classic sfxr
           - id: chiptone
             name: Chiptone
             url: https://sfbgames.itch.io/chiptone
@@ -310,7 +317,7 @@ sections:
             url: https://www.youtube.com/watch?v=sN2Eiya_koA
             tags: [Video]
             note: Render perfectly smooth footage
-            shot: { image: "https://i.ytimg.com/vi/sN2Eiya_koA/maxresdefault.jpg", fit: contain }
+            shot: { image: "https://i.ytimg.com/vi/sN2Eiya_koA/maxresdefault.jpg" }
           - id: davinci-resolve
             name: DaVinci Resolve
             url: https://www.blackmagicdesign.com/products/davinciresolve

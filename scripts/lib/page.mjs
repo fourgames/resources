@@ -61,7 +61,7 @@ export async function capturePage(browser, entry, defaults) {
   // A context per page: no cookies or consent state leak between sites captured in parallel.
   // bypassCSP only lets our own style tag in on sites with strict CSPs.
   const context = await browser.newContext({
-    viewport: defaults.viewport ?? { width: 1440, height: 900 },
+    viewport: defaults.viewport ?? { width: 1440, height: 810 },
     deviceScaleFactor: 1,
     colorScheme: 'dark',
     reducedMotion: 'reduce',
@@ -90,7 +90,12 @@ export async function capturePage(browser, entry, defaults) {
     await dismissConsent(page, shot.click);
     const hide = (shot.hide ?? []).map((s) => `${s}{display:none!important}`).join('\n');
     await page.addStyleTag({ content: STABILIZE_CSS + hide + (shot.css ?? '') });
-    await page.evaluate((y) => window.scrollTo(0, y), shot.scrollY ?? 0);
+    // scrollTo: a Playwright selector (e.g. "text=/when each genre peaked/i") to put at the top of the shot.
+    const scrollY = shot.scrollTo
+      ? await page.locator(shot.scrollTo).first().evaluate((el) => el.getBoundingClientRect().top + window.scrollY)
+          .then((top) => top - (shot.scrollOffset ?? 16))
+      : shot.scrollY ?? 0;
+    await page.evaluate((y) => window.scrollTo(0, y), scrollY);
     await page.waitForTimeout(shot.waitMs ?? defaults.waitMs ?? 1500);
     // Give images on screen (including lazy ones) a few seconds to finish loading.
     await page.evaluate(() => {

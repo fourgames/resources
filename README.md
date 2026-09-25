@@ -14,8 +14,8 @@ success = (core * polish) * (genre * trend) * (art * social)
 - `Art` stops the scroll. `Social` is the strongest multiplier: Local Co-op is `realistic` and Online is high-reward but significantly more `difficult`.
 
 <p align="center">
-  <a href="https://www.youtube.com/@JonasTyroller" target="_blank"><img width="49%" alt="Jonas Tyroller: Just make great games. Make the right games." src=".github/images/manual/jonas-tyroller.webp" /></a>
-  <a href="https://www.youtube.com/@howtomarketagame" target="_blank"><img width="49%" alt="Chris Zukowski: How To Market A Game" src=".github/images/manual/chris-zukowski.webp" /></a>
+  <a href="https://youtu.be/xej_wsBB5tY"><img width="49%" alt="Jonas Tyroller: Just make great games. Make the right games." title="Jonas Tyroller: Just make great games. Make the right games." src=".github/images/shots/jonas-tyroller.webp" /></a>
+  <a href="https://weloveit.io/developers/steam-revenue-report/"><img width="49%" alt="When each genre peaked on Steam (Steam revenue report)" title="When each genre peaked on Steam (Steam revenue report)" src=".github/images/shots/genre-peaks.webp" /></a>
 </p>
 
 > [!IMPORTANT]
@@ -31,44 +31,19 @@ success = (core * polish) * (genre * trend) * (art * social)
 `Godot Engine`: Your free, open-source game engine. Develop your 2D & 3D games, cross-platform projects, or even XR ideas!
 Paired with the `Four Games Template`, you get a project template with ongoing video tutorial support. Focused on architecture and automation with Controller-First design.
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://github.com/fourgames/template"><img src=".github/images/shots/four-games-template.webp" width="240" alt="Four Games Template"></a><br>
-<a href="https://github.com/fourgames/template"><b>Four Games Template</b></a>
-<br><sub>Open Source</sub>
-<br><sub><i>Controller-First Godot template</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://store.steampowered.com/app/404790/Godot_Engine/"><img src=".github/images/shots/godot-engine.webp" width="240" alt="Godot Engine"></a><br>
-<a href="https://store.steampowered.com/app/404790/Godot_Engine/"><b>Godot Engine</b></a>
-<br><sub>2D · 3D · Open Source</sub>
-</td>
-<td></td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://github.com/fourgames/template"><img width="49%" src=".github/images/shots/four-games-template.webp" alt="Four Games Template · Open Source · Controller-First Godot template" title="Four Games Template · Open Source · Controller-First Godot template" /></a>
+  <a href="https://store.steampowered.com/app/404790/Godot_Engine/"><img width="49%" src=".github/images/shots/godot-engine.webp" alt="Godot Engine · 2D · 3D · Open Source" title="Godot Engine · 2D · 3D · Open Source" /></a>
+</p>
 
 ## 🤖 AI Assistants
 
 AI won't make your game fun, but it can take the tedious parts off your plate. `godot-ai` lets Claude read and edit your open Godot project directly: scenes, nodes, scripts and more.
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://www.anthropic.com/claude-opus-5-5"><img src=".github/images/shots/claude-opus.webp" width="240" alt="Claude Opus 5.5"></a><br>
-<a href="https://www.anthropic.com/claude-opus-5-5"><b>Claude Opus 5.5</b></a>
-<br><sub>LLM</sub>
-<br><sub><i>Just starting out? Use medium effort</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://github.com/hi-godot/godot-ai"><img src=".github/images/shots/godot-ai.webp" width="240" alt="godot-ai"></a><br>
-<a href="https://github.com/hi-godot/godot-ai"><b>godot-ai</b></a>
-<br><sub>MCP · Open Source</sub>
-<br><sub><i>Let Claude drive the Godot editor</i></sub>
-</td>
-<td></td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://www.anthropic.com"><img width="49%" src=".github/images/shots/claude.webp" alt="Claude · LLM" title="Claude · LLM" /></a>
+  <a href="https://github.com/hi-godot/godot-ai"><img width="49%" src=".github/images/shots/godot-ai.webp" alt="godot-ai · MCP · Open Source · Let Claude drive the Godot editor" title="godot-ai · MCP · Open Source · Let Claude drive the Godot editor" /></a>
+</p>
 
 ## 🎨 Visuals & Art
 
@@ -76,120 +51,47 @@ AI won't make your game fun, but it can take the tedious parts off your plate. `
 
 #### Tools
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://store.steampowered.com/app/431730/Aseprite/"><img src=".github/images/shots/aseprite.webp" width="240" alt="Aseprite"></a><br>
-<a href="https://store.steampowered.com/app/431730/Aseprite/"><b>Aseprite</b></a>
-<br><sub>2D · Paid</sub>
-<br><sub><i>Pixel art editor</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://store.steampowered.com/app/365670/Blender/"><img src=".github/images/shots/blender.webp" width="240" alt="Blender"></a><br>
-<a href="https://store.steampowered.com/app/365670/Blender/"><b>Blender</b></a>
-<br><sub>3D · Open Source</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.photopea.com/"><img src=".github/images/placeholder.webp" width="240" alt="Photopea"></a><br>
-<a href="https://www.photopea.com/"><b>Photopea</b></a>
-<br><sub>2D · Free · Web</sub>
-<br><sub><i>Photoshop in the browser</i></sub>
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://store.steampowered.com/app/431730/Aseprite/"><img width="32%" src=".github/images/shots/aseprite.webp" alt="Aseprite · 2D · Paid · Pixel art editor" title="Aseprite · 2D · Paid · Pixel art editor" /></a>
+  <a href="https://store.steampowered.com/app/365670/Blender/"><img width="32%" src=".github/images/shots/blender.webp" alt="Blender · 3D · Open Source" title="Blender · 3D · Open Source" /></a>
+  <a href="https://www.photopea.com/"><img width="32%" src=".github/images/placeholder.webp" alt="Photopea · 2D · Free · Web · Photoshop in the browser" title="Photopea · 2D · Free · Web · Photoshop in the browser" /></a>
+</p>
 
 #### Asset Libraries
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://craftpix.net/freebies/"><img src=".github/images/shots/craftpix.webp" width="240" alt="CraftPix"></a><br>
-<a href="https://craftpix.net/freebies/"><b>CraftPix</b></a>
-<br><sub>2D · 3D · Free</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.fab.com"><img src=".github/images/manual/fab.webp" width="240" alt="Fab"></a><br>
-<a href="https://www.fab.com"><b>Fab</b></a>
-<br><sub>2D · 3D · Free · Paid</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://store.godotengine.org"><img src=".github/images/shots/godot-asset-store.webp" width="240" alt="Godot Asset Store"></a><br>
-<a href="https://store.godotengine.org"><b>Godot Asset Store</b></a>
-<br><sub>2D · 3D</sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top">
-<a href="https://itch.io/game-assets/free"><img src=".github/images/shots/itch-free-assets.webp" width="240" alt="itch.io Free Assets"></a><br>
-<a href="https://itch.io/game-assets/free"><b>itch.io Free Assets</b></a>
-<br><sub>2D · 3D · Free</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://kenney.nl/assets"><img src=".github/images/shots/kenney.webp" width="240" alt="Kenney"></a><br>
-<a href="https://kenney.nl/assets"><b>Kenney</b></a>
-<br><sub>2D · 3D · Free</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://opengameart.org/"><img src=".github/images/shots/opengameart.webp" width="240" alt="OpenGameArt"></a><br>
-<a href="https://opengameart.org/"><b>OpenGameArt</b></a>
-<br><sub>2D · 3D · Free</sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top">
-<a href="https://poly.pizza/"><img src=".github/images/shots/poly-pizza.webp" width="240" alt="Poly Pizza"></a><br>
-<a href="https://poly.pizza/"><b>Poly Pizza</b></a>
-<br><sub>3D · Free</sub>
-</td>
-<td></td>
-<td></td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://craftpix.net/freebies/"><img width="32%" src=".github/images/shots/craftpix.webp" alt="CraftPix · 2D · 3D · Free" title="CraftPix · 2D · 3D · Free" /></a>
+  <a href="https://www.fab.com"><img width="32%" src=".github/images/manual/fab.webp" alt="Fab · 2D · 3D · Free · Paid" title="Fab · 2D · 3D · Free · Paid" /></a>
+  <a href="https://store.godotengine.org"><img width="32%" src=".github/images/shots/godot-asset-store.webp" alt="Godot Asset Store · 2D · 3D" title="Godot Asset Store · 2D · 3D" /></a>
+</p>
+
+<p align="center">
+  <a href="https://itch.io/game-assets/free"><img width="32%" src=".github/images/shots/itch-free-assets.webp" alt="itch.io Free Assets · 2D · 3D · Free" title="itch.io Free Assets · 2D · 3D · Free" /></a>
+  <a href="https://kenney.nl/assets"><img width="32%" src=".github/images/shots/kenney.webp" alt="Kenney · 2D · 3D · Free" title="Kenney · 2D · 3D · Free" /></a>
+  <a href="https://opengameart.org/"><img width="32%" src=".github/images/shots/opengameart.webp" alt="OpenGameArt · 2D · 3D · Free" title="OpenGameArt · 2D · 3D · Free" /></a>
+</p>
+
+<p align="center">
+  <a href="https://poly.pizza/"><img width="100%" src=".github/images/shots/poly-pizza.webp" alt="Poly Pizza · 3D · Free" title="Poly Pizza · 3D · Free" /></a>
+</p>
 
 #### Textures, Animations & Palettes
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://lospec.com/palette-list"><img src=".github/images/shots/lospec.webp" width="240" alt="Lospec"></a><br>
-<a href="https://lospec.com/palette-list"><b>Lospec</b></a>
-<br><sub>Palettes · Free</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.mixamo.com/"><img src=".github/images/shots/mixamo.webp" width="240" alt="Mixamo"></a><br>
-<a href="https://www.mixamo.com/"><b>Mixamo</b></a>
-<br><sub>Animations · Free</sub>
-<br><sub><i>Auto-rigging &amp; mocap animations</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.poliigon.com/free"><img src=".github/images/placeholder.webp" width="240" alt="Poliigon"></a><br>
-<a href="https://www.poliigon.com/free"><b>Poliigon</b></a>
-<br><sub>Textures · Free</sub>
-<br><sub><i>Free PBR textures, models &amp; HDRIs</i></sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top">
-<a href="https://www.textures.com/"><img src=".github/images/shots/textures-com.webp" width="240" alt="Textures.com"></a><br>
-<a href="https://www.textures.com/"><b>Textures.com</b></a>
-<br><sub>Textures · Free · Paid</sub>
-</td>
-<td></td>
-<td></td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://lospec.com/palette-list"><img width="32%" src=".github/images/shots/lospec.webp" alt="Lospec · Palettes · Free" title="Lospec · Palettes · Free" /></a>
+  <a href="https://www.mixamo.com/"><img width="32%" src=".github/images/shots/mixamo.webp" alt="Mixamo · Animations · Free · Auto-rigging &amp; mocap animations" title="Mixamo · Animations · Free · Auto-rigging &amp; mocap animations" /></a>
+  <a href="https://www.poliigon.com/free"><img width="32%" src=".github/images/placeholder.webp" alt="Poliigon · Textures · Free · Free PBR textures, models &amp; HDRIs" title="Poliigon · Textures · Free · Free PBR textures, models &amp; HDRIs" /></a>
+</p>
+
+<p align="center">
+  <a href="https://www.textures.com/"><img width="100%" src=".github/images/shots/textures-com.webp" alt="Textures.com · Textures · Free · Paid" title="Textures.com · Textures · Free · Paid" /></a>
+</p>
 
 #### Watch
 
-<table>
-<tr>
-<td align="center" colspan="3">
-<a href="https://youtu.be/rsoUzF3RdsU?si=WE67ZP_uEQoh4Nwf&amp;t=1140"><img src=".github/images/shots/tinyfolks-interview.webp" width="480" alt="Making a Steam hit without &quot;art skills&quot; (Tinyfolks)"></a><br>
-<a href="https://youtu.be/rsoUzF3RdsU?si=WE67ZP_uEQoh4Nwf&amp;t=1140"><b>Making a Steam hit without &quot;art skills&quot; (Tinyfolks)</b></a>
-<br><sub>Video</sub>
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://youtu.be/rsoUzF3RdsU?si=WE67ZP_uEQoh4Nwf&amp;t=1140"><img width="100%" src=".github/images/shots/tinyfolks-interview.webp" alt="Making a Steam hit without &quot;art skills&quot; (Tinyfolks) · Video" title="Making a Steam hit without &quot;art skills&quot; (Tinyfolks) · Video" /></a>
+</p>
 
 ## 🔤 Fonts & Icons
 
@@ -197,57 +99,23 @@ Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made font
 
 #### Fonts
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://www.pentacom.jp/pentacom/bitfontmaker2/"><img src=".github/images/shots/bitfontmaker2.webp" width="240" alt="BitFontMaker2"></a><br>
-<a href="https://www.pentacom.jp/pentacom/bitfontmaker2/"><b>BitFontMaker2</b></a>
-<br><sub>Pixel Fonts · Web</sub>
-<br><sub><i>Draw your own pixel font</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.fontsquirrel.com/"><img src=".github/images/shots/font-squirrel.webp" width="240" alt="Font Squirrel"></a><br>
-<a href="https://www.fontsquirrel.com/"><b>Font Squirrel</b></a>
-<br><sub>Fonts · Free</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://github.com/fontsource/fontsource"><img src=".github/images/shots/fontsource.webp" width="240" alt="Fontsource"></a><br>
-<a href="https://github.com/fontsource/fontsource"><b>Fontsource</b></a>
-<br><sub>Fonts · Open Source</sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top">
-<a href="https://fonts.google.com"><img src=".github/images/shots/google-fonts.webp" width="240" alt="Google Fonts"></a><br>
-<a href="https://fonts.google.com"><b>Google Fonts</b></a>
-<br><sub>Fonts · Free</sub>
-</td>
-<td></td>
-<td></td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://www.pentacom.jp/pentacom/bitfontmaker2/"><img width="32%" src=".github/images/shots/bitfontmaker2.webp" alt="BitFontMaker2 · Pixel Fonts · Web · Draw your own pixel font" title="BitFontMaker2 · Pixel Fonts · Web · Draw your own pixel font" /></a>
+  <a href="https://www.fontsquirrel.com/"><img width="32%" src=".github/images/shots/font-squirrel.webp" alt="Font Squirrel · Fonts · Free" title="Font Squirrel · Fonts · Free" /></a>
+  <a href="https://github.com/fontsource/fontsource"><img width="32%" src=".github/images/shots/fontsource.webp" alt="Fontsource · Fonts · Open Source" title="Fontsource · Fonts · Open Source" /></a>
+</p>
+
+<p align="center">
+  <a href="https://fonts.google.com"><img width="100%" src=".github/images/shots/google-fonts.webp" alt="Google Fonts · Fonts · Free" title="Google Fonts · Fonts · Free" /></a>
+</p>
 
 #### Icons
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://fontawesome.com/icons"><img src=".github/images/shots/font-awesome.webp" width="240" alt="Font Awesome"></a><br>
-<a href="https://fontawesome.com/icons"><b>Font Awesome</b></a>
-<br><sub>Icons · Free · Paid</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://game-icons.net"><img src=".github/images/shots/game-icons.webp" width="240" alt="Game-Icons"></a><br>
-<a href="https://game-icons.net"><b>Game-Icons</b></a>
-<br><sub>Icons · Free</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://fonts.google.com/icons"><img src=".github/images/shots/google-icons.webp" width="240" alt="Google Icons"></a><br>
-<a href="https://fonts.google.com/icons"><b>Google Icons</b></a>
-<br><sub>Icons · Free</sub>
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://fontawesome.com/icons"><img width="32%" src=".github/images/shots/font-awesome.webp" alt="Font Awesome · Icons · Free · Paid" title="Font Awesome · Icons · Free · Paid" /></a>
+  <a href="https://game-icons.net"><img width="32%" src=".github/images/shots/game-icons.webp" alt="Game-Icons · Icons · Free" title="Game-Icons · Icons · Free" /></a>
+  <a href="https://fonts.google.com/icons"><img width="32%" src=".github/images/shots/google-icons.webp" alt="Google Icons · Icons · Free" title="Google Icons · Icons · Free" /></a>
+</p>
 
 ## 🔊 Audio & Sound Design
 
@@ -255,150 +123,56 @@ Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made font
 
 #### DAWs
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://www.image-line.com"><img src=".github/images/shots/fl-studio.webp" width="240" alt="FL Studio"></a><br>
-<a href="https://www.image-line.com"><b>FL Studio</b></a>
-<br><sub>Music · Paid</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.reaper.fm"><img src=".github/images/shots/reaper.webp" width="240" alt="Reaper"></a><br>
-<a href="https://www.reaper.fm"><b>Reaper</b></a>
-<br><sub>Music · SFX · Paid</sub>
-<br><sub><i>Generous 60-day trial</i></sub>
-</td>
-<td></td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://www.image-line.com"><img width="49%" src=".github/images/shots/fl-studio.webp" alt="FL Studio · Music · Paid" title="FL Studio · Music · Paid" /></a>
+  <a href="https://www.reaper.fm"><img width="49%" src=".github/images/shots/reaper.webp" alt="Reaper · Music · SFX · Paid · Generous 60-day trial" title="Reaper · Music · SFX · Paid · Generous 60-day trial" /></a>
+</p>
 
 #### Generators & Trackers
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://www.beepbox.co/"><img src=".github/images/shots/beepbox.webp" width="240" alt="BeepBox"></a><br>
-<a href="https://www.beepbox.co/"><b>BeepBox</b></a>
-<br><sub>Music · Free · Web</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://yurisizov.itch.io/boscaceoil-blue"><img src=".github/images/shots/bosca-ceoil-blue.webp" width="240" alt="Bosca Ceoil Blue"></a><br>
-<a href="https://yurisizov.itch.io/boscaceoil-blue"><b>Bosca Ceoil Blue</b></a>
-<br><sub>Music · Open Source</sub>
-<br><sub><i>Remake of the classic Bosca Ceoil</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://sfbgames.itch.io/chiptone"><img src=".github/images/shots/chiptone.webp" width="240" alt="Chiptone"></a><br>
-<a href="https://sfbgames.itch.io/chiptone"><b>Chiptone</b></a>
-<br><sub>SFX · Free</sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top">
-<a href="https://sfxr.me"><img src=".github/images/shots/sfxr.webp" width="240" alt="sfxr"></a><br>
-<a href="https://sfxr.me"><b>sfxr</b></a>
-<br><sub>SFX · Web</sub>
-<br><sub><a href="https://www.drpetter.se/project_sfxr.html">desktop original</a></sub>
-</td>
-<td></td>
-<td></td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://www.beepbox.co/"><img width="32%" src=".github/images/shots/beepbox.webp" alt="BeepBox · Music · Free · Web" title="BeepBox · Music · Free · Web" /></a>
+  <a href="https://yurisizov.itch.io/boscaceoil-blue"><img width="32%" src=".github/images/shots/bosca-ceoil-blue.webp" alt="Bosca Ceoil Blue · Music · Open Source · Remake of the classic Bosca Ceoil" title="Bosca Ceoil Blue · Music · Open Source · Remake of the classic Bosca Ceoil" /></a>
+  <a href="https://sfbgames.itch.io/chiptone"><img width="32%" src=".github/images/shots/chiptone.webp" alt="Chiptone · SFX · Free" title="Chiptone · SFX · Free" /></a>
+</p>
+
+<p align="center">
+  <a href="https://sfxr.me"><img width="100%" src=".github/images/shots/sfxr.webp" alt="sfxr · SFX · Web · Browser version of DrPetter's classic sfxr" title="sfxr · SFX · Web · Browser version of DrPetter's classic sfxr" /></a>
+</p>
 
 #### Libraries
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://www.epidemicsound.com"><img src=".github/images/shots/epidemic-sound.webp" width="240" alt="Epidemic Sound"></a><br>
-<a href="https://www.epidemicsound.com"><b>Epidemic Sound</b></a>
-<br><sub>Music · SFX · Paid</sub>
-<br><sub><i>Subscription, great for trailers</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://freemusicarchive.org/"><img src=".github/images/shots/free-music-archive.webp" width="240" alt="Free Music Archive"></a><br>
-<a href="https://freemusicarchive.org/"><b>Free Music Archive</b></a>
-<br><sub>Music · Free</sub>
-<br><sub><i>Check each track's license</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://freesound.org"><img src=".github/images/shots/freesound.webp" width="240" alt="Freesound"></a><br>
-<a href="https://freesound.org"><b>Freesound</b></a>
-<br><sub>SFX · Free</sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top">
-<a href="https://itch.io/game-assets/free/tag-sound-effects"><img src=".github/images/shots/itch-free-audio.webp" width="240" alt="itch.io Free Audio"></a><br>
-<a href="https://itch.io/game-assets/free/tag-sound-effects"><b>itch.io Free Audio</b></a>
-<br><sub>Music · SFX · Free</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://kenney.nl/assets/category:Audio"><img src=".github/images/shots/kenney-audio.webp" width="240" alt="Kenney Audio"></a><br>
-<a href="https://kenney.nl/assets/category:Audio"><b>Kenney Audio</b></a>
-<br><sub>Music · SFX · Free</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://opengameart.org/art-search-advanced?field_art_type_tid%5B%5D=12&amp;field_art_type_tid%5B%5D=13"><img src=".github/images/shots/opengameart-audio.webp" width="240" alt="OpenGameArt Audio"></a><br>
-<a href="https://opengameart.org/art-search-advanced?field_art_type_tid%5B%5D=12&amp;field_art_type_tid%5B%5D=13"><b>OpenGameArt Audio</b></a>
-<br><sub>Music · SFX · Free</sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top">
-<a href="https://sonniss.com/gameaudiogdc"><img src=".github/images/placeholder.webp" width="240" alt="Sonniss GDC Bundle"></a><br>
-<a href="https://sonniss.com/gameaudiogdc"><b>Sonniss GDC Bundle</b></a>
-<br><sub>SFX · Free</sub>
-<br><sub><i>Huge royalty-free yearly bundle</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.weloveindies.com/en/welcome/jammers"><img src=".github/images/shots/weloveindies.webp" width="240" alt="WeLoveIndies"></a><br>
-<a href="https://www.weloveindies.com/en/welcome/jammers"><b>WeLoveIndies</b></a>
-<br><sub>Music · SFX · Free</sub>
-<br><sub><i>Free for jams; commercial use needs a license</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.zapsplat.com"><img src=".github/images/manual/zapsplat.webp" width="240" alt="Zapsplat"></a><br>
-<a href="https://www.zapsplat.com"><b>Zapsplat</b></a>
-<br><sub>SFX · Free</sub>
-<br><sub><i>Free with attribution</i></sub>
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://www.epidemicsound.com"><img width="32%" src=".github/images/shots/epidemic-sound.webp" alt="Epidemic Sound · Music · SFX · Paid · Subscription, great for trailers" title="Epidemic Sound · Music · SFX · Paid · Subscription, great for trailers" /></a>
+  <a href="https://freemusicarchive.org/"><img width="32%" src=".github/images/shots/free-music-archive.webp" alt="Free Music Archive · Music · Free · Check each track's license" title="Free Music Archive · Music · Free · Check each track's license" /></a>
+  <a href="https://freesound.org"><img width="32%" src=".github/images/shots/freesound.webp" alt="Freesound · SFX · Free" title="Freesound · SFX · Free" /></a>
+</p>
+
+<p align="center">
+  <a href="https://itch.io/game-assets/free/tag-sound-effects"><img width="32%" src=".github/images/shots/itch-free-audio.webp" alt="itch.io Free Audio · Music · SFX · Free" title="itch.io Free Audio · Music · SFX · Free" /></a>
+  <a href="https://kenney.nl/assets/category:Audio"><img width="32%" src=".github/images/shots/kenney-audio.webp" alt="Kenney Audio · Music · SFX · Free" title="Kenney Audio · Music · SFX · Free" /></a>
+  <a href="https://opengameart.org/art-search-advanced?field_art_type_tid%5B%5D=12&amp;field_art_type_tid%5B%5D=13"><img width="32%" src=".github/images/shots/opengameart-audio.webp" alt="OpenGameArt Audio · Music · SFX · Free" title="OpenGameArt Audio · Music · SFX · Free" /></a>
+</p>
+
+<p align="center">
+  <a href="https://sonniss.com/gameaudiogdc"><img width="32%" src=".github/images/placeholder.webp" alt="Sonniss GDC Bundle · SFX · Free · Huge royalty-free yearly bundle" title="Sonniss GDC Bundle · SFX · Free · Huge royalty-free yearly bundle" /></a>
+  <a href="https://www.weloveindies.com/en/welcome/jammers"><img width="32%" src=".github/images/shots/weloveindies.webp" alt="WeLoveIndies · Music · SFX · Free · Free for jams; commercial use needs a license" title="WeLoveIndies · Music · SFX · Free · Free for jams; commercial use needs a license" /></a>
+  <a href="https://www.zapsplat.com"><img width="32%" src=".github/images/manual/zapsplat.webp" alt="Zapsplat · SFX · Free · Free with attribution" title="Zapsplat · SFX · Free · Free with attribution" /></a>
+</p>
 
 ## 📼 Capturing Video & Editing
 
 High-quality footage is essential for devlogs, trailers, and social media. Use these tools to `record` your gameplay and `edit` your clips into a professional showcase.
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://www.blender.org/features/video-editing/"><img src=".github/images/shots/blender-video.webp" width="240" alt="Blender Video Editing"></a><br>
-<a href="https://www.blender.org/features/video-editing/"><b>Blender Video Editing</b></a>
-<br><sub>Video · Open Source</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.blackmagicdesign.com/products/davinciresolve"><img src=".github/images/shots/davinci-resolve.webp" width="240" alt="DaVinci Resolve"></a><br>
-<a href="https://www.blackmagicdesign.com/products/davinciresolve"><b>DaVinci Resolve</b></a>
-<br><sub>Video · Free</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.youtube.com/watch?v=sN2Eiya_koA"><img src=".github/images/shots/godot-movie-writer.webp" width="240" alt="Godot Movie Maker Mode"></a><br>
-<a href="https://www.youtube.com/watch?v=sN2Eiya_koA"><b>Godot Movie Maker Mode</b></a>
-<br><sub>Video</sub>
-<br><sub><i>Render perfectly smooth footage</i></sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top">
-<a href="https://store.steampowered.com/app/1905180/OBS_Studio/"><img src=".github/images/shots/obs-studio.webp" width="240" alt="OBS Studio"></a><br>
-<a href="https://store.steampowered.com/app/1905180/OBS_Studio/"><b>OBS Studio</b></a>
-<br><sub>Video · Open Source</sub>
-</td>
-<td></td>
-<td></td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://www.blender.org/features/video-editing/"><img width="32%" src=".github/images/shots/blender-video.webp" alt="Blender Video Editing · Video · Open Source" title="Blender Video Editing · Video · Open Source" /></a>
+  <a href="https://www.blackmagicdesign.com/products/davinciresolve"><img width="32%" src=".github/images/shots/davinci-resolve.webp" alt="DaVinci Resolve · Video · Free" title="DaVinci Resolve · Video · Free" /></a>
+  <a href="https://www.youtube.com/watch?v=sN2Eiya_koA"><img width="32%" src=".github/images/shots/godot-movie-writer.webp" alt="Godot Movie Maker Mode · Video · Render perfectly smooth footage" title="Godot Movie Maker Mode · Video · Render perfectly smooth footage" /></a>
+</p>
+
+<p align="center">
+  <a href="https://store.steampowered.com/app/1905180/OBS_Studio/"><img width="100%" src=".github/images/shots/obs-studio.webp" alt="OBS Studio · Video · Open Source" title="OBS Studio · Video · Open Source" /></a>
+</p>
 
 ## 🍀 Marketing & Growth
 
@@ -406,80 +180,31 @@ Building a great game is only half the battle; you need to make sure people can 
 
 #### Steam Page
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://www.steamcapsule.com/artists"><img src=".github/images/shots/steamcapsule.webp" width="240" alt="Steam Capsule"></a><br>
-<a href="https://www.steamcapsule.com/artists"><b>Steam Capsule</b></a>
-<br><sub>Art</sub>
-<br><sub><i>Hire capsule artists</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://partner.steamgames.com/pricing/explorer"><img src=".github/images/shots/steam-pricing.webp" width="240" alt="Steam Pricing Explorer"></a><br>
-<a href="https://partner.steamgames.com/pricing/explorer"><b>Steam Pricing Explorer</b></a>
-<br><sub>Free</sub>
-</td>
-<td align="center" valign="top">
-<a href="https://steamtaghelper.com"><img src=".github/images/shots/steam-tag-helper.webp" width="240" alt="Steam Tag Helper"></a><br>
-<a href="https://steamtaghelper.com"><b>Steam Tag Helper</b></a>
-<br><sub>Free</sub>
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://www.steamcapsule.com/artists"><img width="32%" src=".github/images/shots/steamcapsule.webp" alt="Steam Capsule · Art · Hire capsule artists" title="Steam Capsule · Art · Hire capsule artists" /></a>
+  <a href="https://partner.steamgames.com/pricing/explorer"><img width="32%" src=".github/images/shots/steam-pricing.webp" alt="Steam Pricing Explorer · Free" title="Steam Pricing Explorer · Free" /></a>
+  <a href="https://steamtaghelper.com"><img width="32%" src=".github/images/shots/steam-tag-helper.webp" alt="Steam Tag Helper · Free" title="Steam Tag Helper · Free" /></a>
+</p>
 
 #### Market Research
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://www.letstrack.games"><img src=".github/images/placeholder.webp" width="240" alt="Letstrack"></a><br>
-<a href="https://www.letstrack.games"><b>Letstrack</b></a>
-<br><sub>Paid</sub>
-<br><sub><i>Formerly WhoPlays.games. Find creators &amp; track coverage</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://niklasnotes.com"><img src=".github/images/shots/niklas-notes.webp" width="240" alt="Niklas Notes"></a><br>
-<a href="https://niklasnotes.com"><b>Niklas Notes</b></a>
-<br><sub><i>What players say in Steam reviews</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://sullygnome.com"><img src=".github/images/manual/sullygnome.webp" width="240" alt="SullyGnome"></a><br>
-<a href="https://sullygnome.com"><b>SullyGnome</b></a>
-<br><sub><i>Twitch stats</i></sub>
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://www.letstrack.games"><img width="32%" src=".github/images/placeholder.webp" alt="Letstrack · Paid · Formerly WhoPlays.games. Find creators &amp; track coverage" title="Letstrack · Paid · Formerly WhoPlays.games. Find creators &amp; track coverage" /></a>
+  <a href="https://niklasnotes.com"><img width="32%" src=".github/images/shots/niklas-notes.webp" alt="Niklas Notes · What players say in Steam reviews" title="Niklas Notes · What players say in Steam reviews" /></a>
+  <a href="https://sullygnome.com"><img width="32%" src=".github/images/manual/sullygnome.webp" alt="SullyGnome · Twitch stats" title="SullyGnome · Twitch stats" /></a>
+</p>
 
 #### Reach & Publishing
 
-<table>
-<tr>
-<td align="center" valign="top">
-<a href="https://futurefriends.lol"><img src=".github/images/shots/future-friends.webp" width="240" alt="Future Friends Games"></a><br>
-<a href="https://futurefriends.lol"><b>Future Friends Games</b></a>
-<br><sub><i>Publishing &amp; self-publishing support</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.localizedirect.com"><img src=".github/images/shots/localizedirect.webp" width="240" alt="LocalizeDirect"></a><br>
-<a href="https://www.localizedirect.com"><b>LocalizeDirect</b></a>
-<br><sub><i>Localization</i></sub>
-</td>
-<td align="center" valign="top">
-<a href="https://www.codecks.io/steam-bot/"><img src=".github/images/shots/steamy-discord-bot.webp" width="240" alt="Steamy Discord Bot"></a><br>
-<a href="https://www.codecks.io/steam-bot/"><b>Steamy Discord Bot</b></a>
-<br><sub>Free</sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top">
-<a href="https://www.w4games.com/w4consoles"><img src=".github/images/shots/w4-consoles.webp" width="240" alt="W4 Consoles"></a><br>
-<a href="https://www.w4games.com/w4consoles"><b>W4 Consoles</b></a>
-<br><sub><i>Port Godot games to consoles</i></sub>
-</td>
-<td></td>
-<td></td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://futurefriends.lol"><img width="32%" src=".github/images/shots/future-friends.webp" alt="Future Friends Games · Publishing &amp; self-publishing support" title="Future Friends Games · Publishing &amp; self-publishing support" /></a>
+  <a href="https://www.localizedirect.com"><img width="32%" src=".github/images/shots/localizedirect.webp" alt="LocalizeDirect · Localization" title="LocalizeDirect · Localization" /></a>
+  <a href="https://www.codecks.io/steam-bot/"><img width="32%" src=".github/images/shots/steamy-discord-bot.webp" alt="Steamy Discord Bot · Free" title="Steamy Discord Bot · Free" /></a>
+</p>
+
+<p align="center">
+  <a href="https://www.w4games.com/w4consoles"><img width="100%" src=".github/images/shots/w4-consoles.webp" alt="W4 Consoles · Port Godot games to consoles" title="W4 Consoles · Port Godot games to consoles" /></a>
+</p>
 
 ---
 
