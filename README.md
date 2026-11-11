@@ -155,9 +155,13 @@ Readable UI text and clear icons do a lot of heavy lifting. Grab ready-made font
 </p>
 
 <p align="center">
+  <a href="https://sfxmint.com/"><img width="32%" src="https://github.com/fourgames/resources/raw/screenshots/placeholder.webp" alt="SFXMint · SFX · Free · CC0; AI-generated or synthesized; Godot plugin" title="SFXMint · SFX · Free · CC0; AI-generated or synthesized; Godot plugin" /></a>
   <a href="https://sonniss.com/gameaudiogdc"><img width="32%" src="https://github.com/fourgames/resources/raw/screenshots/shots/sonniss.webp" alt="Sonniss GDC Bundle · SFX · Free · Huge royalty-free yearly bundle" title="Sonniss GDC Bundle · SFX · Free · Huge royalty-free yearly bundle" /></a>
   <a href="https://www.weloveindies.com/en/welcome/jammers"><img width="32%" src="https://github.com/fourgames/resources/raw/screenshots/shots/weloveindies.webp" alt="WeLoveIndies · Music · SFX · Free · Free for jams; commercial use needs a license" title="WeLoveIndies · Music · SFX · Free · Free for jams; commercial use needs a license" /></a>
-  <a href="https://www.zapsplat.com"><img width="32%" src="https://github.com/fourgames/resources/raw/screenshots/manual/zapsplat.webp" alt="Zapsplat · SFX · Free · Free with attribution" title="Zapsplat · SFX · Free · Free with attribution" /></a>
+</p>
+
+<p align="center">
+  <a href="https://www.zapsplat.com"><img width="100%" src="https://github.com/fourgames/resources/raw/screenshots/manual/zapsplat.webp" alt="Zapsplat · SFX · Free · Free with attribution" title="Zapsplat · SFX · Free · Free with attribution" /></a>
 </p>
 
 ## 📼 Capturing Video & Editing

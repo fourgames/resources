@@ -295,6 +295,12 @@ sections:
             name: itch.io Free Audio
             url: https://itch.io/game-assets/free/tag-sound-effects
             tags: [Music, SFX, Free]
+          - id: sfxmint
+            name: SFXMint
+            url: https://sfxmint.com/
+            tags: [SFX, Free]
+            note: CC0; AI-generated or synthesized; Godot plugin
+            shot: { image: "https://sfxmint.com/og.png", fit: contain }
           - id: epidemic-sound
             name: Epidemic Sound
             url: https://www.epidemicsound.com
