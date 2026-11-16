@@ -57,6 +57,10 @@ AI makes game development accessible to more people. For me personally, it raise
   <a href="https://www.photopea.com/"><img width="32%" src="https://github.com/fourgames/resources/raw/screenshots/shots/photopea.webp" alt="Photopea · 2D · Free · Web · Photoshop in the browser" title="Photopea · 2D · Free · Web · Photoshop in the browser" /></a>
 </p>
 
+<p align="center">
+  <a href="https://pixelarthive.com/pixel-art-upscaler"><img width="100%" src="https://github.com/fourgames/resources/raw/screenshots/placeholder.webp" alt="PixelArtHive Pixel Art Upscaler · 2D · Free · Web · Nearest-neighbor scaling for existing sprites" title="PixelArtHive Pixel Art Upscaler · 2D · Free · Web · Nearest-neighbor scaling for existing sprites" /></a>
+</p>
+
 #### Asset Libraries
 
 <p align="center">

@@ -97,6 +97,11 @@ sections:
             tags: [2D, Paid]
             note: Pixel art editor
             shot: { waitMs: 6000, hide: [.banner_open_in_steam] } # let the Steam trailer poster load
+          - id: pixelarthive-upscaler
+            name: PixelArtHive Pixel Art Upscaler
+            url: https://pixelarthive.com/pixel-art-upscaler
+            tags: [2D, Free, Web]
+            note: Nearest-neighbor scaling for existing sprites
           - id: photopea
             name: Photopea
             url: https://www.photopea.com/
