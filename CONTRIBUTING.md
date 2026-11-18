@@ -12,6 +12,12 @@ contributing, especially via bug reports or pull requests.
 
 ## Adding a resource
 
+**What gets added:** this is a short, hand-picked list of resources that game developers already know and rely on. Before you open a PR, check that the resource:
+- Is established: it has been around for a while and has a real user base, with released games, an active community or well-known people using it.
+- Isn't something an existing entry already does, such as a single feature of a tool that's already on the list.
+
+Brand-new or little-known tools and libraries won't be added, even if they're useful. That includes submitting your own product. Once it's widely used, someone will suggest it.
+
 `README.md` is generated. Don't edit it by hand. Instead:
 
 1. Add an entry to the right group in [`resources.yml`](resources.yml):
